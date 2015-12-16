@@ -29,6 +29,10 @@ header h1{
   padding-top: 40px;
   padding-bottom: 20px;
 }
+nav ul li:nth-last-child(1){
+border:2px solid white;
+}
+
 h1{
   color: #000;
 }
@@ -170,4 +174,8 @@ footer{
   margin-top: 25px;
   -webkit-filter: invert(100%);
   -moz-filter: invert(100%);
+}
+  footer nav ul li:nth-last-child(1){
+border:none;
+}
 }
