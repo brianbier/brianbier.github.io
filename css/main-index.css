@@ -1,5 +1,5 @@
 /**********************************
-Header 
+Header Styling
 ***********************************/
 *{
   margin: 0;
@@ -29,6 +29,10 @@ header h1{
   padding-top: 40px;
   padding-bottom: 20px;
 }
+nav ul li:nth-last-child(1){
+border:2px solid white;
+}
+
 h1{
   color: #000;
 }
@@ -60,7 +64,7 @@ section{
 }
 
 /**********************************
-Main Section
+Main Styling
 ***********************************/
 
 .alignment{
@@ -69,7 +73,7 @@ Main Section
   padding: 10px;
   margin: 8px;
   line-height: 2.4em;
-    color: #767676;
+  color: #767676;
   padding-bottom: 25px;
   border-bottom: 1px solid #dcdcdc;
 }
@@ -93,12 +97,21 @@ article h1{
   height: 300px;
 
 }
+.background-overlayer-2{
+  background: rgba(0,0,0, 0.4);
+  height: 300px;
+}
 
 .sub-title{
   font-family: 'Open Sans', sans-serif;
   padding: 20px;
   font-size: 20px;
   color: #000;
+}
+.sub-title p{
+   font-family: 'Open Sans', sans-serif;
+  color: #848383;
+  font-size: 11px;
 }
 
 .alignment button{
@@ -158,22 +171,11 @@ footer{
 
 .icon-size{
   width: 20px;
-  padding-top: 30px;
+  margin-top: 25px;
   -webkit-filter: invert(100%);
   -moz-filter: invert(100%);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  footer nav ul li:nth-last-child(1){
+border:none;
+}
+}

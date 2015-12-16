@@ -7,5 +7,6 @@ Checkout the site here: <http://brianbier.github.io/>
 Languages Used:
 
 * Html
+* CSS
 
 
