@@ -58,6 +58,18 @@ Main Styling
   margin: 20px;
 }
 
+.blog-image{
+  background: url('../images/keyboard_700.png')no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+
+}
+.background-overlayer-2{
+  background: rgba(0,0,0, 0.4);
+  height: 400px;
+}
+
 .sub-title{
   font-family: 'Open Sans', sans-serif;
   padding: 40px 20px 20px 20px;
@@ -81,5 +93,52 @@ Footer
 }
 }
 @media screen and (min-width: 660px) {
+
+header{
+  background: url('../images/header_image_1280.jpg')no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+
+}
+
+.background-overlayer{
+  background: rgba(0,0,0, 0.7);
+  height: 550px;
+}
+header h1{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  padding-top: 40px;
+  padding-left: 70px;
+  padding-bottom: 50px;
+  float: left;
+}
+
+nav{
+  float: right;
+  padding-top: 60px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+
+}
+
+li:nth-last-child(1){
+border:2px solid white;
+}
+
+
+section{
+  text-align: center;
+  padding-top:15em;
+}
+.skills{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 400;
+  padding-left: 18px;
+}
 
 }
