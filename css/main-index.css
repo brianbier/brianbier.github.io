@@ -17,6 +17,12 @@ header{
   height: 300px;
 
 }
+#blog-header-image{
+  background: url('../images/library.png')no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
 .background-overlayer{
   background: rgba(0,0,0, 0.7);
   height: 300px;
@@ -44,7 +50,12 @@ li{
   padding: 5px;
 
 }
-a {
+.logo{
+  color:#fff;
+  text-decoration: none;
+}
+
+.nav-links {
   text-decoration: none;
   color: #fff;
 }
@@ -55,11 +66,10 @@ a {
 .navigation-list-underline{
   text-decoration: underline;
 }
-}
-section{
-  padding-top: 30px;
-}
 
+section{
+  padding-top:2em;
+}
 .skills{
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
@@ -108,7 +118,7 @@ article h1{
 }
 
 .sub-title{
-  font-family: 'Open Sans', sans-serif;
+font-family: 'Libre Baskerville', serif;
   padding: 20px;
   font-size: 20px;
   color: #000;
