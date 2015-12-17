@@ -15,9 +15,6 @@ header{
   height: 400px;
 }
 
-nav ul li:nth-last-child(1){
-border:2px solid white;
-}
 header h1{
   font-family: 'Open Sans', sans-serif;
   font-size: 60px;
@@ -25,6 +22,12 @@ header h1{
   text-align: center;
   padding-top: 40px;
   padding-bottom: 50px;
+}
+.nav-links:hover{
+  text-decoration: underline;
+}
+.navigation-list-underline{
+  text-decoration: underline;
 }
 
 li{
@@ -120,8 +123,11 @@ header{
 }
 
 
-nav ul li:nth-last-child(1){
-border:2px solid white;
+.nav-links:hover{
+  text-decoration: underline;
+}
+.navigation-list-underline{
+  text-decoration: underline;
 }
 
 

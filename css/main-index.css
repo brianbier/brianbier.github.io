@@ -29,9 +29,7 @@ header h1{
   padding-top: 40px;
   padding-bottom: 20px;
 }
-nav ul li:nth-last-child(1){
-border:2px solid white;
-}
+
 
 h1{
   color: #000;
@@ -51,6 +49,13 @@ a {
   color: #fff;
 }
 
+.nav-links:hover{
+  text-decoration: underline;
+}
+.navigation-list-underline{
+  text-decoration: underline;
+}
+}
 section{
   padding-top: 30px;
 }
