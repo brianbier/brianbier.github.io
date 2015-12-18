@@ -24,7 +24,9 @@ I learned that CSS positioning can be very tricky but it allows you to place you
 
 ##What aspects of your design did you find easiest to implement? What was most difficult?
 
-If found the design process very hard using CSS. Trying to decided what colors and backgrounds can be very tricky. I sometimes felt like my colors or fonts were not complementary to each other. I decided that it is best to start designing from the top of the website to the bottom. CSS was extremely easy to understand but it can become very messy if you are not careful. The most difficult part of my site was creating the Responsive design. I had a difficult time trying to set the desktop version since I started my design with the mobile version first. I constantly had to change fonts, positions, and layouts around because it was not very fluent. However, after so much work I am very proud of my final product.
+If found the design process very hard using CSS. Trying to decided what colors and backgrounds can be very tricky. I sometimes felt like my colors or fonts were not complementary to each other. I decided that it is best to start designing from the top of the website to the bottom. CSS was extremely easy to understand but it can become very messy if you are not careful. The most difficult part of my site was creating the Responsive design. I had a difficult time trying to set the desktop version since I started my design with the mobile version first. I constantly had to change fonts, positions, and layouts around because it was not very fluent. However, after so much work I am very proud of my final product. 
+
+**The only part that is bothering me is the loading of the images. How can I make the image load faster without delay**
 
 ##What did you learn about adding and formatting elements with CSS in this challenge?
 
