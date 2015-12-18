@@ -21,9 +21,6 @@ I learned plenty of tricks using the CSS padding, borders and margins. I learn t
 
 ![Google DevTools](https://40.media.tumblr.com/027abf7b15174cce71e7d5236d4af97c/tumblr_nzj4d6U47g1ubupxao1_1280.png "Google DevTools")
 
-Reference-style: 
-
-
 
 ##What did you learn about CSS positioning?
 
