@@ -1,102 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="keywords" content="Full Stack Developer,Developer,Website,Designer,Cheap website,Programmer">
   <meta name="description" content="Creating beautiful and passionate websites for inspired professionals">
   <meta name="author" content="Brian Bier">
-  <meta http-equiv="refresh" content="40">
-  <title>Brian Bier | Blog</title>
+  <!--  <meta http-equiv="refresh" content="10"> -->
+  <title>Brian Bier | Full Stack Developer</title>
+  <!--  <link rel="stylesheet" href="css/normalize.css"> -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/main-index.css">
+  <link rel="stylesheet" href="css/index_responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <header><!-- will include a background image -->
-    <table>
-      <tr>
-        <td>
-          <h1>Brian Bier</h1>
-        </td>
-        <td>
-          <nav>
-            <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">CONTACT</a></li>
-              <li><a href="#"><img src="#" alt="Github Icon"></a></li>
-            </ul>
-          </nav>
-        </td>
-      </tr>
-    </table>
-    <h1>Blog</h1>
-    <img src="#" alt="Down Arrow"/>
+  <header id="blog-header-image">
+    <div class="background-overlayer">
+      <h1><a class="logo"href="index.html">Brian Bier</a></h1>
+      <nav>
+        <ul>
+          <li><a class="nav-links" href="index.html">HOME</a></li>
+          <li><a class="nav-links" href="#">ABOUT</a></li>
+          <li><a class="nav-links" href="#">PORTFOLIO</a></li>
+          <li><a class="nav-links navigation-list-underline" href="blog_homepage.html">BLOG</a></li>
+          <li><a class="nav-links" href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h2 class="skills">Full Stack Developer</h2>
+        <h2 class="skills">UX Designer</h2>
+        <h2 class="skills">Programming Guru</h2>
+      </section>
+    </div>
   </header>
   <main>
-    <section>
-      <h2><a href="#">Week two of DBC</a></h2>
-      <p>Brian Bier &#183; December 11, 2015</p>
-      <img src="#" alt="Blog Image">
-      <h3>Figuring out what HTML means?</h3>
-      <article>
-        <p>
-          Today is a special day for me since it marks the start of my first blog and the end of Week 1 at Dev Bootcamp. I am pretty new to blogging so please forgive me if my blog drift to other topics and confuses you. I will try my best to keep it organize and interesting. Here is a little bit about myself; my name is Brian Bier and I am currently attending Phase 0 at Dev Bootcamp...
-        </p>
-        <button>READ POST &#8594;</button>
-      </article>
-    </section>
-    <section>
-      <h2><a href="#">The Beginning of a new Path</a></h2>
-      <p>Brian Bier &#183; December 4, 2015</p>
-      <img src="#" alt="Blog Image">
-      <h3>Opening Your terminal</h3>
-      <article>
-        <p>
-          Today is a special day for me since it marks the start of my first blog and the end of Week 1 at Dev Bootcamp. I am pretty new to blogging so please forgive me if my blog drift to other topics and confuses you. I will try my best to keep it organize and interesting. Here is a little bit about myself; my name is Brian Bier and I am currently attending Phase 0 at Dev Bootcamp...
-        </p>
-        <button>READ POST &#8594;</button>
-      </article>
-    </section>
-  </main>
-  <aside>
-    <h2>Join the Email list</h2>
-    <form>
-      <p>Email:<br>
-        <input type="email" placeholder="Email Address" required>
-      </p>
-      <p>Email Frequency:<br><!-- Not sure how this will work but I am interested in making it happen -->
-        <input type="radio" name="frequency" value="Weekly" checked> Weekly<br>
-        <input type="radio" name="frequency" value="Bi-Weekly"> Bi-Weekly <br>
-        <input type="radio" name="frequency" value="Monthly"> Monthly<br>
-      </p>
-      <input type="submit">
-    </form>
+<article class="alignment ">
+  <h1>The Beginning of a new Path</h1>
+  <div class="blog-image"><div class="background-overlayer-2"></div></div>
+  <h2 class="sub-title">Opening your terminal for the first time
+  <p>Dec 12, 2015</p>
+  </h2>
+  <p>Today is a special day for me since it marks the start of my first blog and the end of Week 1 at Dev Bootcamp. I am pretty new to blogging so please forgive me if my blog drift to other topics and confuses you. I will try my best to keep it organize and interesting. Here is a little bit about myself; my name is Brian Bier and I am currently attending Phase 0 at Dev Bootcamp.</p>
+  <button onclick="location.href='blog/the_beginning_of_a_new_path.html';">READ POST</button>
+</article>
+<!-- Will use later 
 
-    <h2>Image of the day</h2><!-- I want to get the lastest image that I post on instagram here. I think I need javascript -->
-    <img src="#" alt="Latest Instagram Image">
-  </aside>
-  <footer>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">BLOG</a></li>
-        <li><a href="#">CONTACT</a></li>
-      </ul>
-    </nav>
-    <table>
-      <tr>
-        <td><a href="#"><img src="#" alt="Github Icon"></a></td>
-        <td><a href="#"><img src="#" alt="Linkedin Icon"></a></td>
-        <td><a href="#"><img src="#" alt="Twitter Icon"></a></td>
-        <td><a href="#"><img src="#" alt="Instagram Icon"></a></td>
-        <td><a href="#"><img src="#" alt="Envelope"></a></td>
-      </tr>
-    </table>
-    <p>
-      &copy; 2015 Brian Bier. All rights reserved. Full Stack Developer 
-    </p>
-  </footer>
+<section> pictures will come from instagram 
+<h1>My life through images</h1>
+<table>
+<tr>
+<td>image-1</td>
+<td>image-2</td>
+<td>image-3</td>
+<td>image-4</td>
+<td>image-5</td>
+</tr>
+<tr>
+<td>image 6</td>
+<td>image 7</td>
+<td>image 8</td>
+<td>image 9</td>
+<td>image 10</td>
+</tr>
+</table>
+<button>LEARN ABOUT ME</button>
+</section>
+Need to have a line under the article to divide the next section -->
+
+
+<div class="hire-offer">
+  <p>Got a site that needs help?
+    <br><button>CALL ME TODAY</button>
+  </p> 
+</div>
+</main>
+<footer>
+  <nav >
+    <ul>
+      <li class="footer-list"><a class="nav-links" href="index.html">HOME</a></li>
+      <li class="footer-list"><a class="nav-links" href="#">ABOUT</a></li>
+      <li class="footer-list"><a class="nav-links" href="#">PORTFOLIO</a></li>
+      <li class="footer-list"><a class="nav-links" href="blog_homepage.html">BLOG</a></li>
+      <li class="footer-list"><a class="nav-links" href="#">CONTACT</a></li>
+    </ul>
+  </nav>
+  <ul class="icons">
+    <li><a href="https://github.com/brianbier"><img class="icon-size" src="images/github.png" alt="Github Icon"></a></li>
+
+    <li><a href="https://www.linkedin.com/pub/brian-bier/a1/b/57b"><img class="icon-size"  src="images/linkedin.png" alt="Linkedin Icon"></a></li>        
+    <li><a href="https://twitter.com/briansbier"><img  class="icon-size"  src="images/twitter.png" alt="Twitter Icon"></a></li>       
+    <li><a href="https://instagram.com/briansbier/"><img  class="icon-size"  src="images/instagram.png" alt="Instagram Icon"></a></li>
+    <li><a href="mailto:briansbier@gmail.com"><img class="icon-size"  src="images/email.png" alt="Email"></a></li>
+  </ul>
+  <p class="rights-reserved">
+    &copy; 2015 Brian Bier. All rights reserved. Full Stack Developer 
+  </p>
+</footer>
 </body>
 </html>
