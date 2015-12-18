@@ -3,7 +3,7 @@
 Currently the site is under heavy construction but in a few weeks it will look great.
 
 Checkout the site here: <http://brianbier.github.io/>
-
+** Currently only the homepage,blog, and read post are working. The entire site is responsive. **
 Languages Used:
 
 * Html
