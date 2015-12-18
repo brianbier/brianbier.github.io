@@ -9,6 +9,7 @@ header{
   height: 400px;
 
 }
+
 #blog-header-image{
   background: url('../images/library_700.jpg')no-repeat center center;
   background-size: cover;
@@ -123,6 +124,7 @@ header{
   height: 550px;
 
 }
+
 #blog-header-image{
   background: url('../images/library_1280.jpg')no-repeat center center;
   background-size: cover;
@@ -130,6 +132,7 @@ header{
   height: 550px;
 
 }
+
 .background-overlayer{
   background: rgba(0,0,0, 0.7);
   height: 550px;
