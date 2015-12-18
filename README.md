@@ -15,7 +15,14 @@ Languages Used:
 ##What did you learn about CSS padding, borders, and margin by doing this challenge?
 
 I learned plenty of tricks using the CSS padding, borders and margins. I learn that everything in the HTML page has an imaginary space around it in which can be manipulated. I learned that by using padding you are able to either create space between the content and the imaginary border. I also learned about creating borders with the border property to style however you like. Finally I learned about the margin property, which creates space in the outside of the box after the border section. This will create space between the content and other objects in the HTML page. Below is a great example from Google DevTools.
-Include image
+
+
+###Sample Image:
+
+![Google DevTools](https://40.media.tumblr.com/027abf7b15174cce71e7d5236d4af97c/tumblr_nzj4d6U47g1ubupxao1_1280.png "Google DevTools")
+
+Reference-style: 
+
 
 
 ##What did you learn about CSS positioning?
