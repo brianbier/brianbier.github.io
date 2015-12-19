@@ -50,6 +50,17 @@ nav{
   margin: 10px;
   width: 300px;
 }
+
+.position-properties{
+  color: black;
+}
+.blog-slogan{
+  color: black;
+}
+.links-in-text{
+  color:black;
+  font-weight: bold;
+}
 .love{
   font-size: 12px;
   color: #848383;
