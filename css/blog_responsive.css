@@ -2,23 +2,21 @@
   /**********************************
 Header Styling
 ***********************************/
-header{
-  background: url('../images/header_image_700.jpg')no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
 
-}
-
-#blog-header-image{
+.keyboard-header-image{
   background: url('../images/keyboard_700.png')no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 400px;
 
 }
-
-.background-overlayer{
+.css-concept-image{
+  background: url('../images/keyboard_700.png')no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+}
+.header-overlayer{
   background: rgba(0,0,0, 0.7);
   height: 400px;
 }
@@ -83,18 +81,6 @@ Main Styling
   margin: 20px;
 }
 
-.blog-image{
-  background: url('../images/keyboard_700.png')no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 400px;
-
-}
-.background-overlayer-2{
-  background: rgba(0,0,0, 0.4);
-  height: 400px;
-}
-
 .sub-title{
   font-family: 'Libre Baskerville', serif;
   padding: 40px 20px 20px 20px;
@@ -135,15 +121,21 @@ border:none;
 Header Styling
 ***********************************/
 
-#blog-header-image{
+.keyboard-header-image{
  background: url('../images/keyboard_1280.png')no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 550px;
 
 }
+.css-concept-image{
+  background: url('../images/keyboard_1280.png')no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+}
 
-.background-overlayer{
+.header-overlayer{
   background: rgba(0,0,0, 0.7);
   height: 550px;
 }

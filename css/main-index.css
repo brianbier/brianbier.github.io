@@ -10,20 +10,21 @@ body{
   background-color: #fff;
 }
 
-header{
+.desk-header-image{
   background: url('../images/header_image.jpg')no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 300px;
 
 }
-#blog-header-image{
+.library-header-image{
   background: url('../images/library.png')no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 300px;
 }
-.background-overlayer{
+
+.header-overlayer{
   background: rgba(0,0,0, 0.7);
   height: 300px;
 }
@@ -105,14 +106,21 @@ article h1{
   border-bottom: 1px solid #dcdcdc;
 }*/
 
-.blog-image{
+.blog-keyboard-image{
   background: url('../images/keyboard.png')no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 300px;
 
 }
-.background-overlayer-2{
+.css-concept-image{
+  background: url('../images/keyboard.png')no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+
+}
+.overlayer-mobile{
   background: rgba(0,0,0, 0.4);
   height: 300px;
 }
