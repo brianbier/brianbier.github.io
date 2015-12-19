@@ -1,7 +1,18 @@
-#blog-header-image{
+.keyboard-header-image{
     background: url('../images/keyboard.png')no-repeat center center;
   background-size: cover;
   width: 100%;
+  height: 300px;
+}
+.css-concept-image{
+  background: url('../images/brushes.png')no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.header-overlayer{
+  background: rgba(0,0,0, 0.7);
   height: 300px;
 }
 nav{
@@ -49,6 +60,17 @@ nav{
   float: left;
   margin: 10px;
   width: 300px;
+}
+
+.position-properties{
+  color: black;
+}
+.blog-slogan{
+  color: black;
+}
+.links-in-text{
+  color:black;
+  font-weight: bold;
 }
 .love{
   font-size: 12px;
