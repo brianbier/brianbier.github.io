@@ -1,9 +1,10 @@
 .alignment{
   text-align: left;
+  color: black;
 }
 /*@charset "utf-8";
 /* CSS Document */
-/*
+
 @font-face {
     font-family: 'BebasRegular';
     src: url('fonts/BEBAS___-webfont.eot');
@@ -27,17 +28,17 @@ body {
   display:block;
 }
 
-h1 {
+/*h1 {
   width:498px;
   height:64px;
   background:url(images/h1-bg.jpg);
-  color:#fff;
+/*  color:#fff;*/
   font-family:bebas;
   padding:17px 0px 0px 78px;
   letter-spacing:1px;
   font-size:2.2em;
   margin:0 auto;
-}
+}*/
 
 form {
   width:459px;
@@ -75,21 +76,17 @@ textarea {
 }
 
 #submit {
-  background:url(images/submit.jpg);
   width:127px;
   height:38px;
-  text-indent:-9999px;
+  color: #000;
   border:none;
   margin-top:20px;
   cursor:pointer;
 }
 
-  #submit:hover {
-    opacity:0.9;
-  }
 
 footer a img {
   border:none;
   float:right;
   margin:0px 59px 40px 0px;
-}*/
+}
