@@ -100,6 +100,13 @@ Main Styling
   height: 400px;
 
 }
+.hands-image{
+  background: url('../images/hands_700.jpg')no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+
+}
 .overlayer-mobile{
   background: rgba(0,0,0, 0.4);
   height: 400px;
@@ -213,6 +220,15 @@ Main Styling
 }
 .css-bulb-image{
   background: url('../images/light_bulb_1280.jpg')no-repeat center center;
+  background-size: cover;
+  width: 40em;
+  margin: 0 auto;
+  height: 400px;
+
+}
+
+.hands-image{
+  background: url('../images/hands_1280.jpg')no-repeat center center;
   background-size: cover;
   width: 40em;
   margin: 0 auto;
