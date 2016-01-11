@@ -12,10 +12,11 @@
   <link rel="stylesheet" href="css/main-index.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/index_responsive.css">
+    <link rel="stylesheet" href="css/contact_responsive.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <header class="desk-header-image">
+  <header class="phone-header-image">
     <div class="header-overlayer">
       <h1><a class="logo" href="index.html">Brian Bier</a></h1>
       <nav>
@@ -24,7 +25,7 @@
           <li><a class="nav-links" href="#">ABOUT</a></li>
           <li><a class="nav-links" href="#">PORTFOLIO</a></li>
           <li><a class="nav-links" href="blog_homepage.html">BLOG</a></li>
-          <li><a classclass="nav-links" href="contact.html">CONTACT</a></li>
+          <li><a class="nav-links navigation-list-underline" href="contact.html">CONTACT</a></li>
         </ul>
       </nav>
       <section>
@@ -37,35 +38,34 @@
   <main>
 
     <article class="alignment">
-      <h1> Contact Information</h1>
-      <p> 
-      <strong>Brian Bier</strong>
-      <br>
-      Greater New York City Area
-      <br>
-      <a href="tel:646.548.4363">646.548.4363</a>
-      <br>
-      <a href="mailto:briansbier@gmail.com">briansbier@gmail.com</a>
-      </p>
-      <img src="http://brianbier.co/img/BrianBier.jpeg">
+      <h1 class="contact-information"> Contact Information</h1>
+      <div class="contact-details"> 
+      <p><strong>Brian Bier</strong></p>
+      <p>Greater New York City Area</p>
+      <p><a href="tel:646.548.4363">646.548.4363</a></p>
+      <p><a href="mailto:briansbier@gmail.com">briansbier@gmail.com</a></p>
+      </div>
+      <img class="my-image" alt="Brian Bier" src="http://brianbier.co/img/BrianBier.jpeg">
+
     </article> 
 
   <article class="alignment">
+  <h1 class="contact-information">Send me your inquiry!</h1>
 
-<form method="post" action="form_action/form_process.php">
-    <label>Name</label>
-    <input name="name" placeholder="Type Here">
+  <form action="form_action/form_process.php" method="post" target="_blank" autocomplete="on">
+    <label>Name *</label>
+    <input name="name" placeholder="Full Name" required>
             
-    <label>Email</label>
-    <input name="email" type="email" placeholder="Type Here">
+    <label>Email Address *</label>
+    <input name="email" type="email" placeholder="Email" required>
             
-    <label>Message</label>
-    <textarea name="message" placeholder="Type Here"></textarea>
+    <label>Message *</label>
+    <textarea name="message" placeholder="Your Message"></textarea>
             
-    <label>*What is 2+2? (Anti-spam)</label>
-    <input name="human" placeholder="Type Here">
-    
-    <input id="submit" name="submit" type="submit" value="Submit">
+    <label>What is 2+2?*</label>
+    <input name="human" placeholder="Answer" required>
+    <br>
+    <input id="submit" name="submit" type="submit" value="Send">
 </form>
   </article>
 
