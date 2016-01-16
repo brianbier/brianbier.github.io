@@ -127,6 +127,14 @@ Main Styling
 .alignment button{
   padding: 15px 30px 15px 30px;
 }
+
+iframe{
+  height: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%; border: 0; overflow: hidden;
+}
+
 /**********************************
 Footer
 ***********************************/
