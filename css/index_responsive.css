@@ -24,6 +24,13 @@ Header Styling
   height: 400px;
 
 }
+.coffee-image{
+  background: url('../images/coffee_700.jpg')no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+
+}
 
 .header-overlayer{
   background: rgba(0,0,0, 0.7);
@@ -171,6 +178,13 @@ Header Styling
 
 .phone-header-image{
   background: url('../images/contact_1280.jpg')no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+
+}
+.coffee-image{
+  background: url('../images/coffee_1280.jpg')no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 550px;
