@@ -129,10 +129,10 @@ Main Styling
 }
 
 iframe{
-  height: 600px;
+  height: 45em;
   margin-top: 10px;
   margin-bottom: 5px;
-  width: 80%; border: 0; overflow: hidden;
+  width: 30em; border: 0; overflow: hidden;
 }
 
 /**********************************
@@ -253,10 +253,10 @@ Main Styling
 }
 
 iframe{
-  height: 680px;
+  height: 45em;
   margin-top: 10px;
   margin-bottom: 5px;
-  width: 40%; border: 0; overflow: hidden;
+  width: 30em; border: 0; overflow: hidden;
 }
 
 
