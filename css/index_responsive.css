@@ -129,9 +129,9 @@ Main Styling
 }
 
 iframe{
-  height: 500px;
+  height: 600px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   width: 80%; border: 0; overflow: hidden;
 }
 
@@ -253,9 +253,9 @@ Main Styling
 }
 
 iframe{
-  height: 500px;
+  height: 680px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   width: 40%; border: 0; overflow: hidden;
 }
 
