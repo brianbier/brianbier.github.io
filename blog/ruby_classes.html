@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Full Stack Developer,Developer,Website,Designer,Cheap website,Programmer">
+  <meta name="description" content="Creating beautiful and passionate websites for inspired professionals">
+  <meta name="author" content="Brian Bier">
+  <!--  <meta http-equiv="refresh" content="10"> -->
+  <title>Brian Bier | Full Stack Developer</title>
+  <!--  <link rel="stylesheet" href="css/normalize.css"> -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../css/main-index.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="stylesheet" href="../css/blog_responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header class="hands-image" >
+    <div class="header-overlayer">
+      <h1><a class="logo" href="../index.html">Brian Bier</a></h1>
+      <nav>
+        <ul>
+          <li><a class="nav-links" href="../index.html">HOME</a></li>
+          <li><a class="nav-links" href="../about.html">ABOUT</a></li>
+          <li><a class="nav-links" href="#">PORTFOLIO</a></li>
+          <li><a class="nav-links" href="../blog_homepage.html">BLOG</a></li>
+          <li><a class="nav-links" href="../contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h2 class="type">Blueprint of Objects</h2>
+        <h3 class="time">Jan 17, 2016 &#183; 3 min read</h3>
+      </section>
+    </div>
+  </header>
+  <main>
+<article class="alignment ">
+  <h2 class="sub-title">Ruby classes
+  </h2>
+  <p>Classes are very important in the ruby language and using them was very natural for me. A class is a blueprint from which individual objects are created. Creating classes can help you create multiple objects without having to hard code them to each object you create. To help you understand this concept I will create a number guessing game using a class in which you can play with your friend. 
+  </p>
+  <p>
+  <strong>
+  First we will create a class. Make sure the class name is capitalized and camel case.
+  </strong> 
+  </p>
+  <pre class= "ruby-code-snippet">
+class GuessingGame
+
+End
+
+#The GuessingGame is considered the blueprint of other objects we will create later.
+  </pre>
+  <p>
+     <strong>Next we will create an initialize method.</strong> Whenever Ruby creates a new object, it looks for a method named initialize and executes it. So one simple thing we can do is use an initialize method to put default values into all the instance variables. Creating instance variables allow you to have access to that particular variable outside of its own original scope. 
+  </p>
+<pre class="ruby-code-snippet">
+class GuessingGame
+  def initialize(number)
+     @number = number
+  end
+end
+
+# The @number is an instance variable and it should be used when you are going to use the variable within multiple methods inside the GuessingGame class.
+
+</pre>
+
+  <p><strong>Now we have to focus on the main body of the program. We need to create a method that will check the number guessed with the original number and give the user hints if they are high or low. 
+  </strong>
+</p>
+<pre class="ruby-code-snippet">
+class GuessingGame
+  def initialize(number)
+    @number = number 
+  end
+
+  def guess(guess_number)
+    @guess_number = guess_number
+    until guess_number == @number
+      if guess_number > @number
+        return :high
+      else
+        return :low
+      end
+    end
+  return :correct
+  end
+end
+
+#We created an instance variable for the guess argument which is the number the user will enter to guess the correct number. See how we used the @number instance variable to go out of its scope and inside the guess method, that is a great example using the instance variables. You have to include the return keyword for both the low and high symbols because ruby will implicitly return the correct symbol since its the last line in the method.
+
+</pre>
+
+<p>
+  <strong>  
+Finally, we will create a method that compares the two numbers to see if you guessed the correct number
+  </strong>
+</p>
+<pre class="ruby-code-snippet">
+class GuessingGame
+    def initialize(number)
+      @number = number 
+    end
+
+    def guess(guess_number)
+      @guess_number = guess_number
+      until guess_number == @number
+        if guess_number > @number
+          return :high
+        else
+          return :low
+        end
+      end
+      return :correct
+    end
+
+  def solved?
+    @guess_number.eql? @number 
+  end
+end
+
+#The solved? method ends in a question mark, which gives you an idea that the return value will be a Boolean. I use the method .eql? which is just comparing the two instance variables to one another.  If you want to test this code you can use the driver code below. 
+
+#To create an object of the class you use the following code
+#game = GuessingGame.new(6) 
+
+#As soon as the object is created you can call the methods within that class like the examples below. 
+The (#=> is the output that will occure from calling on the method.)
+
+p guess_returns = game.guess(3) #=> :low
+p game.solved? #=> false
+p guess_returns = game.guess(7) #=> :high
+p game.solved? #=> false
+p guess_returns = game.guess(6) #=> :correct
+p game.solved? #=> true
+</pre>
+<p>
+  In summary, Instance variables are available only for instances of a class. They look like @name. Instance variables are available outside of their scope but within the class blueprint. The initialize method is what actually constructs the data structure. Every class must contain an initialize method. I hope you enjoy creating your first guessing programming game. Now to challenge yourself. I would recommend trying to create a loop outside the class, which lets you continue playing the game until the user inputs the correct number. I would suggest using a loop with IF and Else statements. Here is the <a class="links-in-text" href="https://github.com/brianbier/phase_0/blob/master/week_6/guessing_game/my_solution.rb">link</a> to the guessing game.<strong class="blog-slogan"> Good Luck out there and like always keep on Coding.</strong>
+
+</p>
+  <p class="love">Made with &hearts; Brian Bier</p>
+</article>
+
+<div class="hire-offer">
+  <p>Got a site that needs help?
+    <br><button>CALL ME TODAY</button>
+  </p> 
+</div>
+</main>
+<footer>
+  <nav >
+    <ul>
+      <li class="footer-list"><a class="nav-links" href="../index.html">HOME</a></li>
+      <li class="footer-list"><a class="nav-links" href="../about.html">ABOUT</a></li>
+      <li class="footer-list"><a class="nav-links" href="#">PORTFOLIO</a></li>
+      <li class="footer-list"><a class="nav-links" href="../blog_homepage.html">BLOG</a></li>
+      <li class="footer-list"><a class="nav-links" href="../contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <ul class="icons">
+    <li><a href="https://github.com/brianbier"><img class="icon-size" src="../images/github.png" alt="Github Icon"></a></li>
+
+    <li><a href="https://www.linkedin.com/pub/brian-bier/a1/b/57b"><img class="icon-size"  src="../images/linkedin.png" alt="Linkedin Icon"></a></li>        
+    <li><a href="https://twitter.com/briansbier"><img  class="icon-size"  src="../images/twitter.png" alt="Twitter Icon"></a></li>       
+    <li><a href="https://instagram.com/briansbier/"><img  class="icon-size"  src="../images/instagram.png" alt="Instagram Icon"></a></li>
+    <li><a href="mailto:briansbier@gmail.com"><img class="icon-size"  src="../images/email.png" alt="Email"></a></li>
+  </ul>
+  <p class="rights-reserved">
+    &copy; 2015 Brian Bier. All rights reserved. Full Stack Developer 
+  </p>
+</footer>
+</body>
+</html>
