@@ -36,6 +36,13 @@ Header Styling
   height: 400px;
 
 }
+.friend-image{
+  background: url(https://56.media.tumblr.com/cbfea0b96b5cde7087aa6c0d4dff87ef/tumblr_o1f2qgILU41ubupxao1_1280.jpg)no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 400px;
+
+}
 .header-overlayer{
   background: rgba(0,0,0, 0.7);
   height: 400px;
@@ -184,6 +191,14 @@ Header Styling
 }
 .blue-print-image{
   background: url(https://56.media.tumblr.com/1613e2c49c7032086c71b9c0a1f2d204/tumblr_o14jo6avu81ubupxao1_1280.jpg)no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+
+}
+
+.friend-image{
+  background: url(https://56.media.tumblr.com/d16c83d2d21d783f53b0a3413c2c2e23/tumblr_o1f2ssvgj11ubupxao1_540.jpg)no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 550px;
