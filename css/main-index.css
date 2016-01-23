@@ -44,6 +44,14 @@ body{
   height: 300px;
 
 }
+.computer-image{
+  background: url(https://56.media.tumblr.com/46adc3795d8400398a973aa0ee72534f/tumblr_o1dsekYV3Q1ubupxao1_500.jpg)no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+
+}
+
 .header-overlayer{
   background: rgba(0,0,0, 0.7);
   height: 300px;
@@ -155,6 +163,15 @@ article h1{
   height: 300px;
 
 }
+
+.computer-index-image{
+  background: url(https://56.media.tumblr.com/46adc3795d8400398a973aa0ee72534f/tumblr_o1dsekYV3Q1ubupxao1_500.jpg)no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+
+}
+
 .overlayer-mobile{
   background: rgba(0,0,0, 0.4);
   height: 300px;
