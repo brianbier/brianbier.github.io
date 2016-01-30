@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cheat Sheet | For DBC</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header class="header-image">
+    <nav class="cl-effect-21">
+      <a href="#ruby">Ruby</a>
+      <a href="#javascript">Javascript</a>
+<!--       <a href="#html">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">GIT</a>
+      <a href="#">SQL</a> -->
+    </nav>
+  </header>
+
+<main>
+<div id="page1">
+  <a id="ruby" class="smooth"></a>
+  <section class="top-padding">
+        <ol class="link-spacing">
+          <li><a href="http://brianbier.github.io/blog/arrays_hashes.html">Array and Hashes - my blog</a></li>
+          <li><a href="http://brianbier.github.io/blog/enumerable_methods.html">Enumerables - my blog</a></li>
+          <li><a href="http://ruby-doc.org/core-2.3.0/">Ruby Documentation</a></li>
+          <li><a href="http://stackoverflow.com/questions/20206667/iterating-over-a-multidimensional-array">Iterating over nested Arrays</a></li>
+          <li><a href="http://stackoverflow.com/questions/9279768/how-do-i-loop-over-a-hash-of-hashes-in-ruby">Iterating over nested Hash</a></li>
+          <li><a href="http://www.tutorialspoint.com/ruby/ruby_classes.htm">Ruby Classes</a></li>
+          <li><a href="http://rubylearning.com/satishtalim/ruby_inheritance.html">Ruby Inheritance</a></li>
+          <li><a href="images/attr.png">Understanding attr_reader, attr_writer, attr_accessor</a></li>
+          <li><a href="loops.html">Loops: While, times, Until, For</a></li>
+           <li><a href="test_driven_development.html">Test Driven development basics</a></li>
+           <li><a href="images/hash_values.png">Adding new keys to a hash with default value</a>
+                <ul>
+                    <li><a href="https://github.com/brianbier/phase_0/blob/master/week_5/calculate_mode/my_solution.rb">Example in Github</a></li>
+                </ul>
+           </li>
+        </ol>
+
+  </section>
+</div>
+<div id="page2">
+  <a id="javascript" class="smooth"></a>
+  <section class="top-padding">
+        <ol class="link-spacing">
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects">Javascript Documentation</a></li>
+        <li><a href="http://brianbier.github.io/blog/javascript.html">Javascript vs Ruby - my blog</a></li>
+        <li><a href="http://stackoverflow.com/questions/921789/how-to-loop-through-javascript-object-literal-with-objects-as-members">Iterate through object of objects</a>
+            <ul>
+              <li><a href="http://stackoverflow.com/questions/921789/how-to-loop-through-javascript-object-literal-with-objects-as-members">Basic Object Syntax</a>
+              </li>
+              <li><a href="http://javascript.info/tutorial/objects#calling-methods">Calling Methods inside objects</a>
+              </li>
+              <li><a href="https://medium.com/@prufrock123/js-dot-notation-vs-bracket-notation-797c4e34f01d#.3iqd99lv0">JS dot notation vs bracket notation</a>
+              </li>
+            </ul>
+        <li><a href="images/functions.png">Declaring a Function</a>
+        </li>
+        </li>
+        </ol>
+  </section>
+</div>
+</main>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+$('a[href^="#"]').on('click',function (e) {
+      e.preventDefault();
+
+      var target = this.hash;
+      var $target = $(target);
+
+      $('html, body').stop().animate({
+          'scrollTop': $target.offset().top
+      }, 1000, 'swing', function () {
+          window.location.hash = target;
+      });
+  });
+</script>
+</body>
+</html>

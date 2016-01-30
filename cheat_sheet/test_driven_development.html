@@ -1,0 +1,35 @@
+<div>TDD is an approach is to first start thinking of the what we expect when the program works rather than the how we will get the problem to work.&nbsp;</div>
+<div><strong>What all this means is that instead of trying to write the code that solves the problem we first define what the working code will do when it works and then we write the necessary code.&nbsp;</strong></div>
+<div><strong>&nbsp;</strong></div>
+<div>The Best Approach is to start writing your test first and then stating your expectations of the code after since now we know our goal.</div>
+<div></div>
+<div><u><strong>Example of a RSPEC Test</strong></u></div>
+<div><u><strong>&nbsp;</strong></u></div>
+<div>
+<div>
+<div><span><span><span><span><span><span>describe</span>&nbsp;<span>"fizzbuzz"</span>&nbsp;<span>do</span></span></span></span></span></span></div>
+<code>&nbsp; <span>it</span>&nbsp;<span>'returns&nbsp;"Fizz"&nbsp;when&nbsp;the&nbsp;number&nbsp;is&nbsp;divisible&nbsp;by&nbsp;3'</span>&nbsp;<span>do</span><br />&nbsp; &nbsp; <span>fizz_3</span>&nbsp;<span>=</span>&nbsp;<span>fizzbuzz</span><span>(</span><span>3</span><span>)</span><br /><br />&nbsp; &nbsp; <span>expect</span><span>(</span><span>fizz_3</span><span>).</span><span>to</span>&nbsp;<span>eq</span><span>(</span><span>"Fizz"</span><span>)</span><br />&nbsp; <span>end</span></code>
+<div><span><span><span><span><span><span>end</span></span></span></span></span></span></div>
+<div><strong><span><span>&nbsp;</span></span></strong></div>
+<div><span><span><strong>Use Describe.</strong></span></span></div>
+<div><span>The first thing RSpec allows you to do with its DSL is to define what it is you are describing. As in, are we writing a test that describes how our Billing System works or are we writing a test that describes how fizzbuzz works?</span></div>
+<div><code>describe</code><span>&nbsp;also accepts a block, which will be covered shortly, but for now, just know that a block in ruby starts with the&nbsp;</span><code>do</code><span>keyword. Every block that is opened must be closed. We use the&nbsp;</span><code>end</code><span>keyword to close the&nbsp;</span><code>describe</code><span>&nbsp;block.</span></div>
+<div></div>
+<div><span><span><span><strong>Use IT</strong></span></span></span></div>
+<div><span><span><span>Every specification in RSpec begins with the&nbsp;<code>it</code>method</span></span></span></div>
+<div>
+<div>
+<div><span><span><span>The&nbsp;</span></span><code>it</code><span><span>&nbsp;method, like the&nbsp;</span></span><code>describe</code><span><span>&nbsp;method, accepts an arbitrary string as an argument, namely, some text that says what we're currently interested in testing. Like all things in code, every&nbsp;</span></span><code>it</code><span><span>&nbsp;should be specifying one, only one, and exactly one, desired outcome or behavior.&nbsp;</span></span></span><span>It's totally up to you, the programmer, to decide the phrasing for your&nbsp;</span><code>it</code><span>specification, but a good starting point is a verb or action.&nbsp;</span><code>it returns</code><span>&nbsp;or</span><code>it prints</code><span>&nbsp;or&nbsp;</span><code>it emails</code><span>&nbsp;or&nbsp;</span><code>it validates</code><span>&nbsp;etc.</span></div>
+</div>
+</div>
+<div><span><span><span><span>&nbsp;</span></span></span></span></div>
+<div><strong><span><span><span><span>Expect, TO EQ</span></span></span></span></strong></div>
+<div><strong><span><span><span><span>&nbsp;</span></span></span></span></strong></div>
+<div><code>expect()</code><span>&nbsp;is a method that accepts our unknown value or variable, the thing we're testing.&nbsp;</span><span>&nbsp;we chain a&nbsp;</span><code>to()</code><span>method to the&nbsp;</span><code>expect()</code><span>,&nbsp;</span><span>Then finally we use what is known as a matcher,&nbsp;</span><code>eq</code><span>, to specify our expectation: that we expect the result of our expectation, passed to the&nbsp;</span><code>expect</code><span>&nbsp;method, to equal,&nbsp;</span><code>to</code><span>&nbsp;</span><code>eq</code><span>, 2. LIKE:</span></div>
+<div><span><span><span><span>&nbsp;</span></span></span></span></div>
+<div>
+<div><code><span>x</span>&nbsp;<span>=</span>&nbsp;<span>1</span>&nbsp;<span>+</span>&nbsp;<span>1</span><br /><span>expect</span><span>(</span><span>x</span><span>).</span><span>to</span>&nbsp;<span>eq</span><span>(</span><span>2</span><span>)</span></code></div>
+</div>
+<div></div>
+</div>
+</div>

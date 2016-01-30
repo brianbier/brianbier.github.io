@@ -1,0 +1,68 @@
+<div><span>&nbsp;Ruby's five unique loop constructs;&nbsp;</span><code>loop</code><span>,&nbsp;</span><code>times</code><span>,</span><code>while</code><span>,&nbsp;</span><code>until</code><span>, and&nbsp;</span><code>for</code><span>.</span></div>
+<div><span><span><span><span>&nbsp;</span></span></span></span></div>
+<div><strong><span><span><span><span>Using Loop&nbsp;</span></span></span></span></strong></div>
+<div><span><span><span>&nbsp;</span></span></span></div>
+<div><code><span>loop</span>&nbsp;<span>do</span><br />&nbsp; <span>puts</span>&nbsp;<span>"I&nbsp;have&nbsp;found&nbsp;the&nbsp;Time&nbsp;Machine!"</span></code></div>
+<div><span><span><span>end</span></span></span></div>
+<div><span><span><span>&nbsp;</span></span></span></div>
+<div><span><span><span><strong>Using the Times Constructor</strong></span></span></span></div>
+<div><strong><span>The next construct in our list is&nbsp;</span><code><strong>times</strong></code></strong><span><strong>.</strong> There are two important distinctions to be mindful of when using&nbsp;</span><code>times</code><span>. The first one is that it has to be called on an Integer (like&nbsp;</span><code>1</code><span>&nbsp;or&nbsp;</span><code>10000</code><span>). The second is that it executes the block a certain number of times, which is dependent on the number that it's called on. Let's look at the example below:</span></div>
+<div><span><span><span>&nbsp;</span></span></span></div>
+<div>
+<div><code><span>5</span><span>.</span><span>times</span>&nbsp;<span>do</span><br />&nbsp; <span>puts</span>&nbsp;<span>"Penguins&nbsp;like&nbsp;to&nbsp;jump&nbsp;off&nbsp;icebergs!"</span><br /><span>end</span></code></div>
+</div>
+<div><span><span><span>&nbsp;</span></span></span></div>
+<div></div>
+<div>
+<div>
+<div>ADVANCED TIMES EXAMPLE</div>
+</div>
+</div>
+<div><span><span><span>&nbsp;</span></span></span></div>
+<div><strong><span><span><span>Using While Loop</span></span></span></strong></div>
+<div><span>The&nbsp;</span><code>while</code><span>&nbsp;construct is a little different from the first two constructs (</span><code>loop</code><span>&nbsp;and&nbsp;</span><code>times</code><span>) that we looked at earlier. The&nbsp;</span><code>while</code><span>&nbsp;construct will keep executing a block as long as a specific condition is&nbsp;</span><code>true</code><span>.</span></div>
+<div><span><span><span>&nbsp;</span></span></span></div>
+<div>
+<div><code><span>counter</span>&nbsp;<span>=</span>&nbsp;<span>0</span><br /><span>while</span>&nbsp;<span>counter</span>&nbsp;<span>&lt;</span>&nbsp;<span>20</span><br />&nbsp; <span>puts</span>&nbsp;<span>"The&nbsp;current&nbsp;number&nbsp;is&nbsp;less&nbsp;than&nbsp;20"</span><span>.</span><br />&nbsp; <span>counter</span>&nbsp;<span>+=</span>&nbsp;<span>1</span><br /><span>end</span></code></div>
+</div>
+<div></div>
+<div><strong>Using Until Loop</strong></div>
+<div><code>Until</code><span>&nbsp;is simply the inverse of a&nbsp;</span><code>while</code><span>&nbsp;loop. An&nbsp;</span><code>until</code><span>&nbsp;keyword will keep executing a block&nbsp;</span><em>until a specific condition is true</em></div>
+<div></div>
+<div>
+<div><code><span>counter</span>&nbsp;<span>=</span>&nbsp;<span>0</span><br /><span>until</span>&nbsp;<span>counter</span>&nbsp;<span>==</span>&nbsp;<span>20</span><br />&nbsp; <span>puts</span>&nbsp;<span>"The&nbsp;current&nbsp;number&nbsp;is&nbsp;less&nbsp;than&nbsp;20."</span><br />&nbsp; <span>counter</span>&nbsp;<span>+=</span>&nbsp;<span>1</span><br /><span>end</span></code></div>
+</div>
+<div></div>
+<div><strong>Using the Break Keyword</strong></div>
+<div><span>What happens when we have an infinite loop that keeps on going forever? What happens when, given a specific output, we want to break out of that loop? This is where the&nbsp;</span><code>break</code><span>&nbsp;keyword comes in.</span></div>
+<div><span><span><span><span>&nbsp;</span></span></span></span></div>
+<div><span><span><span><span>Annoying program using the break keyword</span></span></span></span></div>
+<div>
+<div><code><span>def</span>&nbsp;<span>annoying</span><br />&nbsp; &nbsp; <span>loop</span>&nbsp;<span>do</span>&nbsp;<br />&nbsp; &nbsp; &nbsp; &nbsp; <span>puts</span>&nbsp;<span>"What's&nbsp;up,&nbsp;Doc?"</span><br />&nbsp; &nbsp; &nbsp; &nbsp; <span>answer</span>&nbsp;<span>=</span>&nbsp;<span>gets</span><span>.</span><span>chomp</span><br />&nbsp; &nbsp; &nbsp; &nbsp; <span>break</span>&nbsp;<span>if</span>&nbsp;<span>answer</span>&nbsp;<span>==</span>&nbsp;<span>"STOP"</span><br />&nbsp; &nbsp; <span>end</span><br />&nbsp; &nbsp; <span>puts</span>&nbsp;<span>"Okay,&nbsp;okay,&nbsp;jeez.&nbsp;I'll&nbsp;stop.&nbsp;Sorry."</span><br /><span>end</span><br /><br /><span>annoying</span></code></div>
+</div>
+<div></div>
+<div><span><span><span>&nbsp;</span></span></span></div>
+<div><span><span><span><strong>Using For Loop</strong></span></span></span></div>
+<div><strong><span><span><span>&nbsp;</span></span></span></strong></div>
+<div>
+<div><code><span>for</span>&nbsp;<span>counter</span>&nbsp;<span>in</span>&nbsp;<span>1</span><span>.</span><span>.</span><span>40</span>&nbsp;<span>do</span><br />&nbsp; <span>puts</span>&nbsp;<span>"The&nbsp;current&nbsp;number&nbsp;is&nbsp;</span><span>#{</span><span>counter</span><span>}</span><span>."</span><br /><span>end</span></code></div>
+</div>
+<div><span>Before going into the&nbsp;</span><code>for</code><span>&nbsp;example, it's important to explain what</span><code>1..40</code><span>&nbsp;does.&nbsp;</span><code>1..40</code><span>&nbsp;is a&nbsp;</span><a href="http://www.ruby-doc.org/core-2.2.0/Range.html" target="_blank"><code>Range</code></a><span>&nbsp;object. A range represents an interval that starts with a beginning element, and ends with an end element. The range we creating above starts with a&nbsp;</span><code>1</code><span>, and ends with a&nbsp;</span><code>40</code><span>. Open up IRB in your Terminal, and type in&nbsp;</span><code>(1..40).to_a</code><span>. You're converting a range object to an array object, and it will return an array with all of the numbers that constitute the&nbsp;</span><code>1..40</code><span>&nbsp;range.</span></div>
+<div><span><span><span>&nbsp;</span></span></span></div>
+<div><span><span><span>&nbsp;</span></span></span></div>
+<div>
+<h3>WHY USE FOR?</h3>
+</div>
+<div></div>
+<div>
+<div>
+<div>Imagine we have a collection or a list of objects. Let's say you are a prominent collector of sneakers and you are going through your sneaker collection and performing a certain action, putting them away in their box, for each pair. If you have 32 pairs of sneakers, you need to perform that action 32 times, once for each pair. We could do this with one of the constructors we've learned so far. Let's try it with a&nbsp;<code>while</code>loop:</div>
+<div>Generally we use it when we know the exact range</div>
+</div>
+</div>
+<div>
+<div><code><span>shoe_count</span>&nbsp;<span>=</span>&nbsp;<span>1</span><span>.</span><span>.</span><span>32</span><br /><br /><span>for</span>&nbsp;<span>shoe</span>&nbsp;<span>in</span>&nbsp;<span>shoe_count</span>&nbsp;<br />&nbsp; &nbsp; <span>puts</span>&nbsp;<span>"I'm&nbsp;putting&nbsp;a&nbsp;pair&nbsp;of&nbsp;shoes&nbsp;away."</span><br /><span>end</span></code></div>
+</div>
+<div><span><span><span>&nbsp;</span></span></span></div>
+<div><span><span><span>&nbsp;</span></span></span></div>
+<div><strong><span style="color: #444444; font-family: Consolas, 'Liberation Mono', Menlo, Courier, monospace;"><span>Executing Files in Ruby you must&nbsp;</span><span>just</span><span>&nbsp;ruby filename.rb</span></span></strong></div>
