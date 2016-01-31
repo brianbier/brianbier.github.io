@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="Full Stack Developer,Developer,Website,Designer,Cheap website,Programmer">
+  <meta name="description" content="Creating beautiful and passionate websites for inspired professionals">
+  <meta name="author" content="Brian Bier">
+  <!--  <meta http-equiv="refresh" content="10"> -->
+  <title>Brian Bier | Full Stack Developer</title>
+  <!--  <link rel="stylesheet" href="css/normalize.css"> -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../css/main-index.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="stylesheet" href="../css/blog_responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <header class="circle-image" >
+    <div class="header-overlayer">
+      <h1><a class="logo" href="../index.html">Brian Bier</a></h1>
+      <nav>
+        <ul>
+          <li><a class="nav-links" href="../index.html">HOME</a></li>
+          <li><a class="nav-links" href="../about.html">ABOUT</a></li>
+          <li><a class="nav-links" href="portfolio.html">PORTFOLIO</a></li>
+          <li><a class="nav-links" href="../blog_homepage.html">BLOG</a></li>
+          <li><a class="nav-links" href="../contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h2 class="type">Recursion</h2>
+        <h3 class="time">Jan 31, 2016 &#183; 4 min read</h3>
+      </section>
+    </div>
+  </header>
+  <main>
+<article class="alignment ">
+  <h2 class="sub-title">Another solution for repetition
+  </h2>
+  <p>The idea of recursion is not a commonly used word. So, it seems a bit confusing to the novice programmer trying to understand the idea behind it.  I am learning to program and to my understanding Recursion is the idea that a function calls itself. Pretty simple, right? Well not really. Recursion is used to take a big problem and start breaking it down into smaller and smaller pieces ("Divide and Conquer") and continuing to feed their solutions back into the original function until some sort of answer is achieved and the whole chain unwinds. I am a visual learner so I hope that the following example gives you a slight understanding of what recursion does.  
+  </p>
+  <p>
+  For a recursive algorithm to terminate you need a base case (e.g. a condition where the function does not call itself recursively again).
+
+<pre class="ruby-code-snippet">
+#Example 1: Counting down
+
+def countdown(n)
+# base case which helps break out of the recursion
+  return n if n.zero? 
+  
+  puts n
+ # The recursion call testing the following number in the line eg. 5 - 1 = 4
+  countdown(n-1)   
+end               
+
+countdown(5)
+#=>5
+#=>4
+#=>3
+#=>2
+#=>1
+
+</pre>
+  </p>
+<p> 
+<pre class="ruby-code-snippet">
+Example 2: Finding the factorial of a number 
+
+def factorial(n)
+# base case which helps break out of the recursion
+  if n == 0 
+    1
+  else
+# The recursion call
+    n * factorial(n-1)
+  end
+end
+
+factorial(5) #=>120
+
+</pre>
+</p>
+<p>
+Now you may be asking yourself why use recursion when you can get the simple solution using a loop. Well, remember how in ruby there is always an easier way to accomplish somethings. Recursion adds clarity and sometimes reduces the time needed to write and debug code.  The problem with recursion is that is is a bit slower and it uses more computer memory. If you are not careful you can get a stack overflow. A Stack overflow is an undesirable condition in which a particular computer program uses more memory space than it has available causing your program to crash.<a href="http://stackoverflow.com/questions/26158/how-does-a-stack-overflow-occur-and-how-do-you-prevent-it">Read this explanation on stack</a>
+</p>
+<p>In conclusion, any problem you can solve recursively you can also solve using the iterators that you know and love. If you find yourself saying "why didn't I just use a while loop here?" then you probably should have. To my understanding there is a balance of when using recursion or not and this is something we are going to learn in Phase 1. Hopefully this explanation gives you a very basic understanding of recursion. Check out the resources I found on recursion that may be helpful for you.<strong class="blog-slogan"> Good Luck out there and like always keep on Coding.</strong>
+</p>
+<p>
+Resources:<br>
+<a href="https://vimeo.com/24716767">Introduction to Recursion video</a><br>
+<a href="http://www.codequizzes.com/computer-science/recursion">Recursion Q&A</a><br>
+<a href="http://stackoverflow.com/questions/26158/how-does-a-stack-overflow-occur-and-how-do-you-prevent-it">Read this explanation on stack</a>
+
+</p>
+
+<p class="love">Made with &hearts; Brian Bier</p>
+
+</article>
+
+<div class="hire-offer">
+  <p>Got a site that needs help?
+    <br><button>CALL ME TODAY</button>
+  </p> 
+</div>
+</main>
+<footer>
+  <nav >
+    <ul>
+      <li class="footer-list"><a class="nav-links" href="../index.html">HOME</a></li>
+      <li class="footer-list"><a class="nav-links" href="../about.html">ABOUT</a></li>
+      <li class="footer-list"><a class="nav-links" href="../portfolio.html">PORTFOLIO</a></li>
+      <li class="footer-list"><a class="nav-links" href="../blog_homepage.html">BLOG</a></li>
+      <li class="footer-list"><a class="nav-links" href="../contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+  <ul class="icons">
+    <li><a href="https://github.com/brianbier"><img class="icon-size" src="../images/github.png" alt="Github Icon"></a></li>
+
+    <li><a href="https://www.linkedin.com/pub/brian-bier/a1/b/57b"><img class="icon-size"  src="../images/linkedin.png" alt="Linkedin Icon"></a></li>        
+    <li><a href="https://twitter.com/briansbier"><img  class="icon-size"  src="../images/twitter.png" alt="Twitter Icon"></a></li>       
+    <li><a href="https://instagram.com/briansbier/"><img  class="icon-size"  src="../images/instagram.png" alt="Instagram Icon"></a></li>
+    <li><a href="mailto:briansbier@gmail.com"><img class="icon-size"  src="../images/email.png" alt="Email"></a></li>
+  </ul>
+  <p class="rights-reserved">
+    &copy; 2015 Brian Bier. All rights reserved. Full Stack Developer 
+  </p>
+</footer>
+</body>
+</html>
