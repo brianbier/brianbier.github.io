@@ -69,9 +69,12 @@
 </form> -->
 
 <form action="//formspree.io/briansbier@gmail.com"
-      method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
+      method="POST" target="_blank">
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="_replyto" placeholder="Your email">
+    <input type="text" name="message" placeholder="Your Message" required>
+    <input type="hidden" name="_next" value="//site.io/thanks.html" />
+    <input type="text" name="_gotcha" style="display:none" />
     <input type="submit" value="Send">
 </form>
   </article>
