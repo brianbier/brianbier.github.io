@@ -54,11 +54,13 @@ header h1{
   padding-top: 40px;
   padding-bottom: 50px;
 }
-.nav-links:hover{
-  text-decoration: underline;
+nav a{
+  color: #fff;
+  text-decoration: none;
 }
-.navigation-list-underline{
-  text-decoration: underline;
+nav a:hover{
+  border-bottom:2px solid #fff;
+  text-decoration: none;
 }
 
 li{
@@ -274,11 +276,13 @@ Header Styling
 }
 
 
-.nav-links:hover{
-  text-decoration: underline;
+nav a{
+  color: #fff;
+  text-decoration: none;
 }
-.navigation-list-underline{
-  text-decoration: underline;
+nav a:hover{
+  border-bottom:2px solid #fff;
+  text-decoration: none;
 }
 
 

@@ -64,7 +64,14 @@ header h1{
   padding-top: 40px;
   padding-bottom: 20px;
 }
-
+nav a{
+  color: #fff;
+  text-decoration: none;
+}
+nav a:hover{
+  border-bottom:2px solid #fff;
+  text-decoration: none;
+}
 
 h1,a{
   color: #000;
@@ -85,16 +92,9 @@ li{
   text-decoration: none;
 }
 
-.nav-links {
-  text-decoration: none;
-  color: #fff;
-}
 
-.nav-links:hover{
-  text-decoration: underline;
-}
 .navigation-list-underline{
-  text-decoration: underline;
+  border-bottom:2px solid #fff;
 }
 
 section{
@@ -214,6 +214,15 @@ font-family: 'Libre Baskerville', serif;
   cursor: pointer;
   -webkit-appearance:none;
 }
+
+.alignment button:hover{
+  background: #000;
+  color: #fff;
+  transition: all .6s ease ;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -o-transition: all .6s ease;
+}
 .hire-offer{
   font-family: 'Libre Baskerville', serif;
   background-color: rgba(0,0,0, 0.8);
@@ -233,11 +242,33 @@ font-family: 'Libre Baskerville', serif;
   cursor: pointer;
   -webkit-appearance:none;
 }
+
+.hire-offer button:hover{
+  background-color: rgba(0,0,0, 0.6);
+  color: #dcdcdc;
+  transition: all .6s ease ;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -o-transition: all .6s ease;
+}
 iframe{
   height: 30em;
   margin-top: 10px;
   margin-bottom: 5px;
   width: 20em; border: 0; overflow: hidden;
+}
+
+.pagination li a{
+  padding: 5px 7px 5px 7px;
+
+}
+.pagination a:hover{
+  background-color: #000;
+  color: #fff;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
 }
 /**********************************
 
@@ -383,10 +414,22 @@ footer{
 .icon-size{
   width: 20px;
   margin-top: 25px;
+  filter: invert(70%);
+  -webkit-filter: invert(70%);
+  -moz-filter: invert(70%);
+}
+.icon-size:hover{
+  color:red;
+  filter: invert(100%);
   -webkit-filter: invert(100%);
   -moz-filter: invert(100%);
+  transition: all .6s ease;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -o-transition: all .6s ease;
 }
   footer nav ul li:nth-last-child(1){
+}
 border:none;
 }
 }
