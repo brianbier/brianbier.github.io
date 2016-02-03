@@ -9,6 +9,8 @@ Languages Used:
 
 * Html
 * CSS
+* Javascript
+* PHP
 
 
 #Reflection:
