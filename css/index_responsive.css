@@ -181,6 +181,35 @@ iframe{
   margin-bottom: 5px;
   width: 30em; border: 0; overflow: hidden;
 }
+/**********************************
+
+PORTFOLIO CSS
+**********************************/
+.grid {
+  padding: 20px 20px 100px 20px;
+  max-width: 1100px;
+  list-style: none;
+  text-align: center;
+}
+
+.grid li {
+  display: inline-block;
+  width: 440px;
+  margin-left: 15px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+.grid figure {
+  margin: 0;
+  position: relative;
+}
+
+.grid figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
 
 /**********************************
 Footer
@@ -355,8 +384,35 @@ iframe{
   margin-bottom: 5px;
   width: 30em; border: 0; overflow: hidden;
 }
+/**********************************
 
+PORTFOLIO CSS
+**********************************/
+.grid {
+  padding-left: 40px;
+  max-width: 1190px;
+  list-style: none;
+  text-align: center;
+}
 
+.grid li {
+  display: inline-block;
+  width: 420px;
+  margin-left: 45px;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+.grid figure {
+  margin: 0;
+  position: relative;
+}
+
+.grid figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
 /**********************************
 Footer Styling
 ***********************************/
