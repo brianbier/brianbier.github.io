@@ -11,27 +11,27 @@ body{
 }
 
 .desk-header-image{
-  background: url('../images/header_image.jpg')no-repeat center center;
+  background: url(https://40.media.tumblr.com/50b7a64b72adb3f1cdc54259b79a99b6/tumblr_o1y8y7LLdI1ubupxao1_1280.jpg)no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 300px;
 
 }
 .phone-header-image{
-  background: url('../images/contact.jpg')no-repeat center center;
+  background: url(https://41.media.tumblr.com/f6c75f1242414c249f11a017b86e3e9d/tumblr_o1ybd75sb61ubupxao1_1280.jpg)no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 300px;
 
 }
 .library-header-image{
-  background: url('../images/library.png')no-repeat center center;
+  background: url(https://41.media.tumblr.com/4f23ef5c13050b5a0c95350e9ffc56d4/tumblr_o1ybgzbjqU1ubupxao1_1280.jpg)no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 300px;
 }
 .coffee-image{
-  background: url('../images/coffee.jpg')no-repeat center center;
+  background: url(https://41.media.tumblr.com/73430613bccd63e2a38f6a3773fe8ac4/tumblr_o1ybj1I3bU1ubupxao1_1280.jpg)no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 300px;
@@ -66,8 +66,9 @@ header h1{
 }
 
 
-h1{
+h1,a{
   color: #000;
+  text-decoration: none;
 }
 
 ul{
@@ -135,21 +136,21 @@ article h1{
 }*/
 
 .blog-keyboard-image{
-  background: url('../images/keyboard.png')no-repeat center center;
+  background: url(https://41.media.tumblr.com/980fcab77cb6c5fa2e62977a9d0dacc8/tumblr_o1yble6Wbz1ubupxao1_1280.png)no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 300px;
 
 }
 .css-concept-image{
-  background: url('../images/brushes.png')no-repeat center center;
+  background: url(https://40.media.tumblr.com/3551870209747dbc4761f830f735f36c/tumblr_o1yboyagLR1ubupxao1_1280.jpg)no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 300px;
 
 }
 .css-bulb-image{
-  background: url('../images/light_bulb.jpg')no-repeat center center;
+  background: url(https://40.media.tumblr.com/f1dfd933f6052c53048edd98e4548437/tumblr_o1ybrofLqf1ubupxao1_1280.jpg)no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 300px;
@@ -157,7 +158,7 @@ article h1{
 }
 
 .hands-image{
-  background: url('../images/hands.jpg')no-repeat center center;
+  background: url(https://36.media.tumblr.com/56e15d82cbaf15faeeff933a1cbc48c8/tumblr_o1ybu8SwU51ubupxao1_1280.jpg)no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 300px;
@@ -210,6 +211,8 @@ font-family: 'Libre Baskerville', serif;
   background-color: rgba(0,0,0, 0.0);
   border: 2px solid #000;
   color: #000;
+  cursor: pointer;
+  -webkit-appearance:none;
 }
 .hire-offer{
   font-family: 'Libre Baskerville', serif;
@@ -227,6 +230,8 @@ font-family: 'Libre Baskerville', serif;
   background-color: rgba(0,0,0, 0.0);
   border: 2px solid #dcdcdc;
   color: #dcdcdc;
+  cursor: pointer;
+  -webkit-appearance:none;
 }
 iframe{
   height: 30em;
