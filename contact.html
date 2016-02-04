@@ -70,12 +70,17 @@
 
 <form action="//formspree.io/briansbier@gmail.com"
       method="POST" target="_blank">
+    <label>Name *</label>
     <input type="text" name="name" placeholder="Full Name" required>
+    <label>Email Address *</label>
     <input type="email" name="_replyto" placeholder="Your email">
-    <input type="text" name="message" placeholder="Your Message" required>
-    <input type="hidden" name="_next" value="//site.io/thanks.html" />
-    <input type="text" name="_gotcha" style="display:none" />
-    <input type="submit" value="Send">
+
+    <label>Message *</label>
+    <textarea type='text' name="message" placeholder="Your Message"></textarea>
+<!--     <input type="text" name="message" placeholder="Your Message" maxLength="300" required> -->
+<!--     <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
+    <input type="text" name="_gotcha" style="display:none" /><br>
+    <input id='submit' type="submit" value="Send">
 </form>
   </article>
 
