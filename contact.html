@@ -52,8 +52,8 @@
   <article class="alignment">
   <h1 class="contact-information">Send me your inquiry!</h1>
 
-<form action="//formspree.io/briansbier@gmail.com"
-      method="POST" target="_blank">
+<form id="form-input" action="//formspree.io/briansbier@gmail.com"
+      method="POST">
     <label>Name *</label>
     <input pattern=".{4,11}"type="text" name="name" placeholder="Full Name" required title="4 character minimum">
     <label>Email Address *</label>
@@ -61,8 +61,7 @@
 
     <label>Message *</label>
     <textarea type='text' name="message" placeholder="Your Message" maxlength="200" minlength="5" required></textarea>
-<!--     <input type="text" name="message" placeholder="Your Message" maxLength="300" required> -->
-<!--     <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
+    <input type="hidden" name="_next" value="contact.html" />
     <input type="text" name="_gotcha" style="display:none" /><br>
     <input id='submit' type="submit" value="Send">
 </form>
