@@ -52,31 +52,15 @@
   <article class="alignment">
   <h1 class="contact-information">Send me your inquiry!</h1>
 
- <!--  <form action="form_action/form_process.php" method="post" target="_blank" autocomplete="on">
-    <label>Name *</label>
-    <input name="name" placeholder="Full Name" required>
-            
-    <label>Email Address *</label>
-    <input name="email" type="email" placeholder="Email" required>
-            
-    <label>Message *</label>
-    <textarea name="message" placeholder="Your Message"></textarea>
-            
-    <label>What is 2+2?*</label>
-    <input name="human" placeholder="Answer" required>
-    <br>
-    <input id="submit" name="submit" type="submit" value="Send">
-</form> -->
-
 <form action="//formspree.io/briansbier@gmail.com"
       method="POST" target="_blank">
     <label>Name *</label>
-    <input type="text" name="name" placeholder="Full Name" required>
+    <input pattern=".{4,11}"type="text" name="name" placeholder="Full Name" required title="4 character minimum">
     <label>Email Address *</label>
-    <input type="email" name="_replyto" placeholder="Your email" required>
+    <input pattern=".{4,}" type="email" name="_replyto" placeholder="Your email" required title="4 character minimum">
 
     <label>Message *</label>
-    <textarea type='text' name="message" placeholder="Your Message" required></textarea>
+    <textarea type='text' name="message" placeholder="Your Message" maxlength="200" minlength="5" required></textarea>
 <!--     <input type="text" name="message" placeholder="Your Message" maxLength="300" required> -->
 <!--     <input type="hidden" name="_next" value="//site.io/thanks.html" /> -->
     <input type="text" name="_gotcha" style="display:none" /><br>
