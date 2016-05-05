@@ -11,12 +11,16 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main-index.css">
   <link rel="stylesheet" href="css/index_responsive.css">
+  <link rel="stylesheet" href="css/animate.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header class="coffee-image">
     <div class="header-overlayer">
-      <h1><a class="logo" href="index.html">Brian Bier</a></h1>
+      <h1><a class="logo" href="index.html">Brian Bier<span class="typed-cursor">|</span></a></h1>
       <nav>
         <ul>
           <li><a class="nav-links" href="index.html">HOME</a></li>
@@ -35,14 +39,16 @@
   </header>
   <main>
     <article class="alignment">
-      <h1>Who Am I?</h1>
-      <p> I am a Full Stack developer and UX designer. I learned to program while I was attending the New York City Dev Bootcamp.  I believe in simplicity, innovation, and creativity when designing and building web applications. When I am not cranking out elegant code or designing beautiful interfaces, you will find me riding my bike on the west side highway or drinking dark coffee at a local coffee shop.</p>
+      <h1 class="wow slideInLeft">Who Am I?</h1>
+      <p class="wow slideInRight"> I am a Full Stack developer and UX designer. I learned to program while I was attending the New York City Dev Bootcamp.  I believe in simplicity, innovation, and creativity when designing and building web applications. When I am not cranking out elegant code or designing beautiful interfaces, you will find me riding my bike on the west side highway or drinking dark coffee at a local coffee shop.</p>
     </article> 
     <article class="alignment">
+      <div class="wow bounceInUp" data-wow-duration=".7s" data-wow-delay=".5s">
       <h1>What I am all about </h1>
       <iframe src="http://instansive.com/widgets/39e7c7a6953efa62657ffdb6825157ccb37a8963.html" scrolling="no" allowtransparency="true" class="instansive-widget">
       </iframe>
-      <p> New York is a beautiful place and especially during the winter months. Snowboarding is one of those sports I am not good at but I never give up. Occasionally you will find me at Thunder Ridge ski area as soon as the season begins.  Although the majority of the year you will find me behind a computer screen, I do set aside time for family. Family is very important to me and I do believe everyone should take the time off in order to have a well-balanced life. Many people have played a key role in my career and I am very thankful. But I've also worked extremely hard to get to where I am today. Every challenge that I deal with on a day-to-day basis is always meaningful and rewarding. Bottom line: I love what I do and will continue doing what I love. </p>
+      </div>
+      <p class="wow bounceInUp" data-wow-delay=".4s"> New York is a beautiful place and especially during the winter months. Snowboarding is one of those sports I am not good at but I never give up. Occasionally you will find me at Thunder Ridge ski area as soon as the season begins.  Although the majority of the year you will find me behind a computer screen, I do set aside time for family. Family is very important to me and I do believe everyone should take the time off in order to have a well-balanced life. Many people have played a key role in my career and I am very thankful. But I've also worked extremely hard to get to where I am today. Every challenge that I deal with on a day-to-day basis is always meaningful and rewarding. Bottom line: I love what I do and will continue doing what I love. </p>
     </article> 
 <!-- INSTANSIVE WIDGET -->
 
@@ -92,14 +98,14 @@ Need to have a line under the article to divide the next section -->
 
 
 <div class="hire-offer">
-  <p>Got a site that needs help?
-    <br><button onclick="location.href='contact.html';">CALL ME TODAY</button>
+  <p class="wow fadeInRight" data-wow-duration="2s">Got a site that needs help?
+    <br><button class="wow pulse" data-wow-duration="2s" onclick="location.href='contact.html';">CALL ME TODAY</button>
   </p> 
 </div>
 </main>
 
 <footer>
-  <nav >
+  <nav class="wow fadeInLeft" data-wow-duration="2s" >
     <ul>
       <li class="footer-list"><a class="nav-links" href="index.html">HOME</a></li>
       <li class="footer-list"><a class="nav-links" href="about.html">ABOUT</a></li>
@@ -109,7 +115,7 @@ Need to have a line under the article to divide the next section -->
     </ul>
   </nav>
 
-  <ul class="icons">
+  <ul class="icons wow fadeInLeft" data-wow-duration="2s">
     <li><a href="https://github.com/brianbier"><img class="icon-size" src="images/github.png" alt="Github Icon"></a></li>
 
     <li><a href="https://www.linkedin.com/pub/brian-bier/a1/b/57b"><img class="icon-size"  src="images/linkedin.png" alt="Linkedin Icon"></a></li>        
@@ -117,11 +123,28 @@ Need to have a line under the article to divide the next section -->
     <li><a href="https://instagram.com/briansbier/"><img  class="icon-size"  src="images/instagram.png" alt="Instagram Icon"></a></li>
     <li><a href="mailto:briansbier@gmail.com"><img class="icon-size"  src="images/email.png" alt="Email"></a></li>
   </ul>
-  <p class="rights-reserved">
+  <p class="rights-reserved wow fadeInLeft" data-wow-duration="2s">
     &copy; 2015 Brian Bier. All rights reserved. Full Stack Developer 
   </p>
 </footer>
 <script src="http://instansive.com/widget/js/instansive.js">
+</script>
+<script>
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: true // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();
 </script>
 </body>
 </html>

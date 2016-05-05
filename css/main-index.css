@@ -9,6 +9,9 @@ body{
   font-family: 'Open Sans', sans-serif;
   background-color: #fff;
 }
+.wow {
+   visibility: hidden;
+}
 
 .desk-header-image{
   background: url(https://40.media.tumblr.com/50b7a64b72adb3f1cdc54259b79a99b6/tumblr_o1y8y7LLdI1ubupxao1_1280.jpg)no-repeat center center;
@@ -90,6 +93,7 @@ li{
 .logo{
   color:#fff;
   text-decoration: none;
+  padding-left: 30px;
 }
 
 
@@ -106,6 +110,28 @@ section{
   color: #fff;
   font-weight: 400;
   padding-left: 15px;
+}
+.typed-cursor{
+    opacity: 1;
+    color:#fff;
+    -webkit-animation: blink 0.8s infinite;
+    -moz-animation: blink 0.8s infinite;
+    animation: blink 0.8s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
 }
 
 /**********************************

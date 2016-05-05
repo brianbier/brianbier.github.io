@@ -12,6 +12,9 @@ CONTACT HEADER
 
 
 }
+.wow {
+   visibility: hidden;
+}
 .contact-details{
   font-size: 17px;
   line-height: 30px;

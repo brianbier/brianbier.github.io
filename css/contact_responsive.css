@@ -2,7 +2,9 @@
 /***************
 CONTACT HEADER
 ***************/
-
+.wow {
+   visibility: hidden;
+}
 .alignment{
 
   color: rgba(74,74,74,.9);
@@ -92,7 +94,9 @@ textarea {
 /***************
 CONTACT HEADER
 ***************/
-
+.wow {
+   visibility: hidden;
+}
 .alignment{
 
   color: rgba(74,74,74,.9);

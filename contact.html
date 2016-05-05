@@ -12,13 +12,17 @@
   <link rel="stylesheet" href="css/main-index.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/index_responsive.css">
-    <link rel="stylesheet" href="css/contact_responsive.css">
+  <link rel="stylesheet" href="css/contact_responsive.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header class="phone-header-image">
     <div class="header-overlayer">
-      <h1><a class="logo" href="index.html">Brian Bier</a></h1>
+      <h1><a class="logo" href="index.html">Brian Bier<span class="typed-cursor">|</span></a></h1>
       <nav>
         <ul>
           <li><a class="nav-links" href="index.html">HOME</a></li>
@@ -37,7 +41,7 @@
   </header>
   <main>
 
-    <article class="alignment">
+    <article class="alignment wow bounceInUp" data-wow-duration="1s" data-wow-delay=".3s">
       <h1 class="contact-information"> Contact Information</h1>
       <div class="contact-details"> 
       <p><strong>Brian Bier</strong></p>
@@ -45,11 +49,11 @@
       <p><a href="tel:646.548.4363">646.548.4363</a></p>
       <p><a href="mailto:briansbier@gmail.com">briansbier@gmail.com</a></p>
       </div>
-      <img class="my-image" alt="Brian Bier" src="https://56.media.tumblr.com/bef12814ad132988f32034726c4365cd/tumblr_ns0pk0Hlgg1ubupxao1_1280.png">
+      <img class="my-image" alt="Brian Bier" src="https://66.media.tumblr.com/be1c5a5c3f7ee72e6a206c496d367700/tumblr_o6pzasqqzC1ubupxao1_1280.jpg">
 
     </article> 
 
-  <article class="alignment">
+  <article class="alignment wow bounceInUp" data-wow-duration="1s" data-wow-delay=".3s">
   <h1 class="contact-information">Send me your inquiry!</h1>
 
 <form id="form-input" action="//formspree.io/briansbier@gmail.com"
@@ -68,13 +72,13 @@
   </article>
 
 <div class="hire-offer">
-  <p>Got a site that needs help?
-    <br><button onclick="location.href='#';">CALL ME TODAY</button>
+  <p class="wow fadeInRight" data-wow-duration="2s">Got a site that needs help?
+    <br><button class="wow pulse"  onclick="location.href='#';">CALL ME TODAY</button>
   </p> 
 </div>
 </main>
 <footer>
-  <nav >
+  <nav class="wow fadeInLeft" data-wow-duration="2s">
     <ul>
       <li class="footer-list"><a class="nav-links" href="index.html">HOME</a></li>
       <li class="footer-list"><a class="nav-links" href="about.html">ABOUT</a></li>
@@ -83,7 +87,7 @@
       <li class="footer-list"><a class="nav-links" href="contact.html">CONTACT</a></li>
     </ul>
   </nav>
-  <ul class="icons">
+  <ul class="icons wow fadeInLeft" data-wow-duration="2s">
     <li><a href="https://github.com/brianbier"><img class="icon-size" src="images/github.png" alt="Github Icon"></a></li>
 
     <li><a href="https://www.linkedin.com/pub/brian-bier/a1/b/57b"><img class="icon-size"  src="images/linkedin.png" alt="Linkedin Icon"></a></li>        
@@ -91,9 +95,26 @@
     <li><a href="https://instagram.com/briansbier/"><img  class="icon-size"  src="images/instagram.png" alt="Instagram Icon"></a></li>
     <li><a href="mailto:briansbier@gmail.com"><img class="icon-size"  src="images/email.png" alt="Email"></a></li>
   </ul>
-  <p class="rights-reserved">
+  <p class="rights-reserved wow fadeInLeft" data-wow-duration="2s">
     &copy; 2015 Brian Bier. All rights reserved. Full Stack Developer 
   </p>
 </footer>
+<script>
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: true // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();
+</script>
 </body>
 </html>

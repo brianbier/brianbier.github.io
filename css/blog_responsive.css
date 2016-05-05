@@ -2,7 +2,9 @@
   /**********************************
 Header Styling
 ***********************************/
-
+.wow {
+   visibility: hidden;
+}
 .css-concept-image{
   background: url(https://40.media.tumblr.com/3551870209747dbc4761f830f735f36c/tumblr_o1yboyagLR1ubupxao1_1280.jpg)no-repeat center center;
   background-size: cover;
@@ -169,7 +171,9 @@ border:none;
  /**********************************
 Header Styling
 ***********************************/
-
+.wow {
+   visibility: hidden;
+}
 .keyboard-header-image{
     background: url(https://41.media.tumblr.com/980fcab77cb6c5fa2e62977a9d0dacc8/tumblr_o1yble6Wbz1ubupxao1_1280.png)no-repeat center center;
   background-size: cover;
