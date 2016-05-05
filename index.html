@@ -11,14 +11,26 @@
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600|Libre+Baskerville:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main-index.css">
   <link rel="stylesheet" href="css/index_responsive.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+  <script>
+    $(function(){
+      $(".element").typed({
+        strings: ["Brian Bier"],
+        typeSpeed: 100
+      });
+    });
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
   <header class="desk-header-image">
     <div class="header-overlayer">
-      <h1><a class="logo" href="index.html">Brian Bier</a></h1>
+      <h1><a class="logo element" href="index.html"></a></h1>
       <nav>
-        <ul>
+        <ul class="wow flipInX">
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">ABOUT</a></li>
           <!-- <li><a href="portfolio.html">PORTFOLIO</a></li> -->
@@ -27,61 +39,18 @@
         </ul>
       </nav>
       <section>
-        <h2 class="skills">Full Stack Developer</h2>
-        <h2 class="skills">UX Designer</h2>
-        <h2 class="skills">Programming Guru</h2>
+        <h2 class="skills wow bounceInUp" data-wow-duration="2s">Full Stack Developer</h2>
+        <h2 class="skills wow bounceInUp" data-wow-duration="2s" data-wow-delay=".5s">UX Designer</h2>
+        <h2 class="skills wow bounceInUp" data-wow-duration="2s" data-wow-delay="1s">Programming Guru</h2>
       </section>
     </div>
   </header>
   <main>
     <article class="alignment">
-      <h1> A brief background</h1>
-      <p>My passion for programming started with a simple "Hello world." I've always had creative ideas but I never knew how to execute them. After long nights of studying, drinking coffee and building simple applications. I realize that programming is a modern art where everything is possible. Now I create powerful websites with passion and clarity so that the user experience is simple, beautiful and powerful. </p>
+      <h1 class="wow slideInLeft"> A brief background</h1>
+      <p class="wow slideInRight">My passion for programming started with a simple "Hello world." I've always had creative ideas but I never knew how to execute them. After long nights of studying, drinking coffee and building simple applications. I realize that programming is a modern art where everything is possible. Now I create powerful websites with passion and clarity so that the user experience is simple, beautiful and powerful. </p>
     </article> 
-
-    <!-- Will use later -->
-
-<!-- <section>
-<h1>My latest Projects</h1>
-<table>
-<tr>
-background image 1 
-<p>Name of the project</p>
-<button>VIEW PROJECT</button>
-</td>
-<td>background image 1 
-<p>Name of the project</p>
-<button>VIEW PROJECT</button>
-</td>
-<td>background image 1 
-<p>Name of the project</p>
-<button>VIEW PROJECT</button>
-</td>
-</tr>
-</table>
-</section> 
-<section> pictures will come from instagram 
-<h1>My life through images</h1>
-<table>
-<tr>
-<td>image-1</td>
-<td>image-2</td>
-<td>image-3</td>
-<td>image-4</td>
-<td>image-5</td>
-</tr>
-<tr>
-<td>image 6</td>
-<td>image 7</td>
-<td>image 8</td>
-<td>image 9</td>
-<td>image 10</td>
-</tr>
-</table>
-<button>LEARN ABOUT ME</button>
-</section>
-Need to have a line under the article to divide the next section -->
-      <article class="alignment">
+      <article class="alignment wow slideInLeft" data-wow-duration="1s">
       <h1><a href="blog/tech.html">Recursion</a></h1><!--Need to create a new image class -->
       <div class="circle-image">
         <div class="overlayer-mobile"></div>
@@ -95,13 +64,13 @@ Need to have a line under the article to divide the next section -->
     </article>
 
 <div class="hire-offer">
-  <p>Got a site that needs help?
-    <br><button onclick="location.href='contact.html';">CALL ME TODAY</button>
+  <p class="wow fadeInRight" data-wow-duration="2s">Got a site that needs help?
+    <br><button class="wow pulse" data-wow-duration="2s" onclick="location.href='contact.html';">CALL ME TODAY</button>
   </p> 
 </div>
 </main>
 <footer>
-  <nav >
+  <nav class="wow fadeInLeft" data-wow-duration="2s"  >
     <ul>
       <li class="footer-list"><a class="nav-links" href="index.html">HOME</a></li>
       <li class="footer-list"><a class="nav-links" href="about.html">ABOUT</a></li>
@@ -110,7 +79,7 @@ Need to have a line under the article to divide the next section -->
       <li class="footer-list"><a class="nav-links" href="contact.html">CONTACT</a></li>
     </ul>
   </nav>
-  <ul class="icons">
+  <ul class="icons wow fadeInLeft" data-wow-duration="2s" >
     <li><a href="https://github.com/brianbier"><img class="icon-size" src="images/github.png" alt="Github Icon"></a></li>
 
     <li><a href="https://www.linkedin.com/pub/brian-bier/a1/b/57b"><img class="icon-size"  src="images/linkedin.png" alt="Linkedin Icon"></a></li>        
@@ -118,9 +87,26 @@ Need to have a line under the article to divide the next section -->
     <li><a href="https://instagram.com/briansbier/"><img  class="icon-size"  src="images/instagram.png" alt="Instagram Icon"></a></li>
     <li><a href="mailto:briansbier@gmail.com"><img class="icon-size"  src="images/email.png" alt="Email"></a></li>
   </ul>
-  <p class="rights-reserved">
+  <p class="rights-reserved wow fadeInLeft" data-wow-duration="2s">
     &copy; 2015 Brian Bier. All rights reserved. Full Stack Developer 
   </p>
 </footer>
+<script>
+var wow = new WOW(
+  {
+    boxClass:     'wow',      // animated element css class (default is wow)
+    animateClass: 'animated', // animation css class (default is animated)
+    offset:       0,          // distance to the element when triggering the animation (default is 0)
+    mobile:       true,       // trigger animations on mobile devices (default is true)
+    live:         true,       // act on asynchronously loaded content (default is true)
+    callback:     function(box) {
+      // the callback is fired every time an animation is started
+      // the argument that is passed in is the DOM node being animated
+    },
+    scrollContainer: true // optional scroll container selector, otherwise use window
+  }
+);
+wow.init();
+</script>
 </body>
 </html>
