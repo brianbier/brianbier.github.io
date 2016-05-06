@@ -65,9 +65,6 @@ header h1{
   padding-top: 40px;
   padding-bottom: 50px;
 }
-.nav-links:hover{
-  text-decoration: underline;
-}
 .navigation-list-underline{
   text-decoration: underline;
 }
@@ -226,11 +223,6 @@ Header Styling
 .header-overlayer{
   background: rgba(0,0,0, 0.7);
   height: 550px;
-}
-
-
-.nav-links:hover{
-  text-decoration: underline;
 }
 .navigation-list-underline{
   text-decoration: underline;

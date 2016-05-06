@@ -123,12 +123,15 @@ li{
 section{
   padding-top:2em;
 }
+.my-skill{
+    margin-top: 50px;
+}
 .skills{
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+  font-size: 17px;
   color: #fff;
   font-weight: 400;
-  padding-left: 15px;
+  text-align: center;
 }
 .typed-cursor{
     opacity: 1;
