@@ -13,6 +13,25 @@ body{
    visibility: hidden;
 }
 
+.resume{
+  text-align: center;
+  padding:10px;
+  margin-top: 10px;
+}
+.resume a{
+  padding:10px;
+  border: 2px solid #fff;
+  text-decoration: none;
+}
+.resume a:hover{
+  background-color: #fff;
+  padding:10px;
+  color: #333333;
+    transition: all .6s ease ;
+  -webkit-transition: all .6s ease;
+  -moz-transition: all .6s ease;
+  -o-transition: all .6s ease;
+}
 .desk-header-image{
   background: url(https://40.media.tumblr.com/50b7a64b72adb3f1cdc54259b79a99b6/tumblr_o1y8y7LLdI1ubupxao1_1280.jpg)no-repeat center center;
   background-size: cover;
