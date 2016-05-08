@@ -1,10 +1,11 @@
-# brianbier.co
+# My Personal Website
 
 ![Brian Bier Site][site]
 
 [site]: https://66.media.tumblr.com/01efd47e705516f91b5801856817f25a/tumblr_o6vdqxp2Ma1ubupxao1_1280.png "www.brianbier.co"
 
-
+## View My site
+[www.brianbier.co](http://www.brianbier.co/)
 
 ## Summary
 I am a full stack developer who believes in simplicity, innovation, and creativity when designing and building web applications.
