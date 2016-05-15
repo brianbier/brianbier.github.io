@@ -9,7 +9,7 @@
 
 ## Summary
 I am a full stack developer who believes in simplicity, innovation, and creativity when designing and building web applications.
-I build my site using a responsive design starting from smaller screens to larger screens. This made the design of the website easier to build for phones and tablets. As much as I like to use frameworks, I decided to build my site without a framework to test my knowledge of HTML5 semantics, CSS styling, and Javascript.  
+I built my site using a responsive design starting from smaller screens to larger screens. This made the design of the website easier to build for phones and tablets. As much as I like to use frameworks, I decided to build my site without a framework to test my knowledge of HTML5 semantics, CSS styling, and Javascript.  
 
 ## Technologies
 * Html5
