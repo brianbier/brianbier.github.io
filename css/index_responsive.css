@@ -393,29 +393,41 @@ iframe{
 PORTFOLIO CSS
 **********************************/
 .grid {
-  padding-left: 40px;
-  max-width: 1190px;
+  margin-left: 1%;
+  max-width: 1790px;
   list-style: none;
   text-align: center;
 }
 
+.container{
+  margin-top: 3rem;
+}
 .grid li {
   display: inline-block;
-  width: 420px;
-  margin-left: 45px;
+  width: 20em;
+  margin: 0;
   padding: 20px;
+  text-align: left;
+  /*position: relative;*/
+}
+
+.grid li {
+  display: inline-block;
+  /*width: 420px;*/
+  margin-left: 4%;
+  padding: 10px;
   text-align: left;
   position: relative;
 }
 .grid figure {
   margin: 0;
-  position: relative;
+  /*position: relative;*/
 }
 
 .grid figure img {
-  max-width: 100%;
-  display: block;
-  position: relative;
+  /*max-width: 100%;*/
+  /*display: block;*/
+  /*position: relative;*/
 }
 /**********************************
 Footer Styling
