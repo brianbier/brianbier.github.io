@@ -39,6 +39,12 @@ body{
   height: 640px;
 
 }
+.portfolio-header-image{
+  background: url(https://65.media.tumblr.com/dc3802f33663bb00a027472b2cc839c4/tumblr_o7msua5KYs1ubupxao1_1280.jpg)no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 640px;
+}
 .phone-header-image{
   background: url(https://41.media.tumblr.com/f6c75f1242414c249f11a017b86e3e9d/tumblr_o1ybd75sb61ubupxao1_1280.jpg)no-repeat center center;
   background-size: cover;
@@ -330,7 +336,7 @@ PORTFOLIO CSS
   text-align: center;
 }
 .container{
-  margin-top: 25rem;
+  margin-top: 5rem;
 }
 .grid li {
   display: inline-block;
