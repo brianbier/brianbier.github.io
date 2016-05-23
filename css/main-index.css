@@ -362,7 +362,7 @@ PORTFOLIO CSS
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px;
+  padding: 30px;
   background: rgba(0,0,0, 2);
   color: gray;
 }
@@ -385,6 +385,7 @@ PORTFOLIO CSS
   background: gray;
   /*#ed4e6e I like this color*/
   color: #fff;
+  font-size: 16px;
 }
 
 /* Caption Style 3 */
