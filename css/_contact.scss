@@ -1,0 +1,147 @@
+.contact-wrapper {
+  position: relative
+}
+
+.contact {
+  padding: 100px 0;
+  background: url(../images/design.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  h1 {
+    color: $white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 30px;
+    color: #c9c9c9;
+    width: 45%;
+    margin-bottom: 15px;
+    .copy-right{
+      font-size: 13px;
+      color: #7f7f7f;
+      margin-bottom: 0;
+    }
+    span {
+        color: #ff415c;
+        font-size: 15px;
+        margin: 0 5px;
+    }
+  }
+}
+
+.contact{
+    li{
+      display: inline-block;
+      margin: 0;
+      width: 60px;
+      height: 60px;
+      a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-align: center;
+
+      }
+    }
+}
+
+
+.footer-socials {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  i {
+    color: #fff;
+    margin-top: 18px
+  }
+}
+
+
+.footer-linkedin a {
+  background-color: #1c87bd;
+  font-size: 25px;
+  &:hover{
+    background-color: #1D678D;
+  }
+}
+.footer-twitter a {
+  background-color: #3cf;
+  font-size: 25px;
+  &:hover{
+    background-color: #33A3C9
+  }
+}
+
+.footer-github a {
+  background-color: $light-gray;
+  font-size: 25px;
+  &:hover{
+    background-color: $gray;
+  }
+}
+
+.footer-mail a {
+  background-color: $green;
+  font-size: 25px;
+  &:hover{
+    background-color:darken($green,10%);
+  }
+}
+
+.footer-breadcrumbs {
+  position: absolute;
+  bottom: 0;
+  a {
+    font-size: 10px;
+    color: #7f7f7f;
+  } 
+  p {
+    width: 100%;
+  }
+}
+.pulse2{
+  -webkit-animation-name: pulse2;
+  animation-name: pulse2;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear
+}
+
+@-webkit-keyframes pulse2 {
+  from {
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+  50% {
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+  }
+  to {
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+
+@keyframes pulse2 {
+  from {
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+  50% {
+    -webkit-transform: scale(1.2,1.2);
+    transform: scale(1.2,1.2);
+  }
+  to {
+    -webkit-transform: scale(1,1);
+    transform: scale(1,1);
+  }
+}
+
