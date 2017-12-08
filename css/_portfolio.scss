@@ -68,7 +68,7 @@ figure{
       -o-transition: all 300ms ease-in-out;
       -webkit-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out
-    }  
+    }
   }
 }
 
@@ -80,7 +80,7 @@ figure{
   transform: scale(1.1)
 }
 
-.projects { 
+.projects {
   h1 {
     font-size: 20px;
     font-style: italic;
@@ -95,7 +95,7 @@ figure{
   vertical-align: middle;
   margin: 0 5px
 }
-.projects { 
+.projects {
   figcaption {
   position: absolute;
   top: 0;
@@ -189,7 +189,7 @@ figure{
   .view-live{
     position: absolute;
     bottom: 0;
-    right: 80px;
+    right: 40px;
     width: 40px;
     height: 40px;
     background-color: $green;
@@ -220,4 +220,3 @@ figure{
 .projects img {
   width: 100%;
 }
-

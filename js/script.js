@@ -61,7 +61,7 @@ $(document).ready(function(){
     /***************** Bar Chart Animation ******************/
     $('.bar').width('0%');
     $('.bar').waypoint(function(){
-        
+
         $('.bar').each(function(){
         // debugger;
         var width = $(this).attr('data-percentage')
@@ -177,5 +177,3 @@ $(document).ready(function(){
         //     console.log('callback - particles.js config loaded');
         // });
 });
-
-
