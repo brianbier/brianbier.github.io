@@ -26,7 +26,7 @@ var app = new Vue({
         linkText: 'www.peconiclandtrust.org'
       },
       'eyetoeye': {
-        image: '/images/eyetoeye.jpg',
+        image: '/images/eyetoeye.png',
         description: 'Eye to eye helps transition students from a place of discomfort to a newfound sense of assurance and belonging. As a developer, I decided to create alot of resuable Vue.js components and Tailwind css Utility classes. It helped with the rapid development of this website. I implemented Vue.js throughout the website for example in the mentoring page. I built a flickity slider component that handles all sliders throughout the site and created a google maps component that shows all of the clients chapters thorught the United States.',
         title: 'Eye To Eye:',
         type: 'Web Development',
@@ -46,7 +46,7 @@ var app = new Vue({
         linkText: 'www.cgctherapy.com'
       },
       'sasha-ostojic': {
-        image: '/images/sasha-ostojic.jpg',
+        image: '/images/sashaostojic.png',
         description: 'By presenting ideas the right way, as digestible, data-driven insights, ideas can spark conversations and collaborations to deliver real world solutions and create a positive impact in a variety of topics. As a freelancer I volunteer to built a fully functional website using Ruby on Rails which helped with the understanding of creating a CRUD application.',
         title: 'Sasha Ostojic:',
         type: 'Web Development',

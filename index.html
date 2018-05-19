@@ -89,8 +89,9 @@
               <div class="close">
                 <a @click.prevent="closeModal" href="#">&#215;</a>
               </div>
-              <div class="featured-image" :style="{ 'background-image': 'url('+ selectedProject.image +')' }">
-              </div>
+              <!-- <div class="featured-image" :style="{ 'background-image': 'url('+ selectedProject.image +')' }">
+              </div> -->
+              <img class="featured-image" :src="selectedProject.image" width="433" alt="">
             </section>
           </transition>
         </div>

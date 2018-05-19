@@ -490,6 +490,7 @@ section .close a {
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
+  opacity: 0.9;
 }
 
 @media (max-width: 500px) {
