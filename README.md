@@ -1,5 +1,4 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+# brianbier.co 
 
 # CREATOR
 
