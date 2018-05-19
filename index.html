@@ -13,9 +13,6 @@
 
 <body>
   <div id="app">
-    <!-- <div v-if="orientationSize == 90">
-    <h1>Please Turn Your phone to virtical view</h1>
-  </div> -->
     <header :class="[ modalVisable ? 'overflow-hidden': '' ]">
       <div class="header-wrapper">
         <h1>Brian Bier Full Stack Developer</h1>
@@ -44,7 +41,7 @@
         <b class="blue-line"></b>
         <img class="head-logo" src="images/brianbier-logo.png" alt="Brian Bier Full Stack Developer">
         <p class="keep-in-touch">
-          Keep in touch
+          Contact
         </p>
         <div class="contact-details">
           <p>
@@ -67,7 +64,7 @@
         <div class="container">
           <transition name="slide-fade">
             <section v-if="modalVisable" :class="[ modalVisable ? 'visable': '' ]">
-              <a target="_blank" :href="selectedProject.link">
+              <a target="_blank" :href="selectedProject.link" class="heading">
                 <h1>
                   {{ selectedProject.title }}
                 </h1>
@@ -89,8 +86,6 @@
               <div class="close">
                 <a @click.prevent="closeModal" href="#">&#215;</a>
               </div>
-              <!-- <div class="featured-image" :style="{ 'background-image': 'url('+ selectedProject.image +')' }">
-              </div> -->
               <img class="featured-image" :src="selectedProject.image" width="433" alt="">
             </section>
           </transition>

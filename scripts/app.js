@@ -11,7 +11,7 @@ var app = new Vue({
         title: 'Coast Guard Foundation:',
         type: 'Web Development',
         subHeading: 'Supporting those who protect our nation',
-        tech: ['Nuxt.js', 'Vue.js', 'webpack', 'gulp', 'craftCMS', 'php', 'Tachyon', 'html5'],
+        tech: ['Nuxt.js', 'Vue.js', 'Webpack', 'Gulp', 'craftCMS', 'Php', 'Tachyon', 'Hmtl5'],
         link: 'https://coastguardfoundation.org/',
         linkText: 'www.coastguardfoundation.org'
       },
@@ -21,7 +21,7 @@ var app = new Vue({
         title: 'Peconic Land Trust:',
         type: 'Web Development',
         subHeading: 'Conserving Long Island',
-        tech: ['craftCMS', 'Twig', 'laravel valet', 'gulp', 'webpack', 'vue.js', 'bootstrap 4', 'html5', 'sass'],
+        tech: ['craftCMS', 'Twig', 'laravel valet', 'Gulp', 'Webpack', 'Vue.js', 'Boostrap 4', 'Hmtl5', 'Sass'],
         link: 'https://peconiclandtrust.org/',
         linkText: 'www.peconiclandtrust.org'
       },
@@ -31,7 +31,7 @@ var app = new Vue({
         title: 'Eye To Eye:',
         type: 'Web Development',
         subHeading: 'It takes 1 to help 1',
-        tech: ['craftCMS', 'google Maps Api', 'Vue.js', 'Twig', 'Laravel Valet', 'gulp', 'html5', 'Tailwind css'],
+        tech: ['craftCMS', 'google Maps Api', 'Vue.js', 'Twig', 'Laravel Valet', 'Gulp', 'Hmtl5', 'Tailwind css'],
         link: 'https://eyetoeyenational.org/mentoring',
         linkText: 'www.eyetoeyenational.org'
       },
@@ -41,7 +41,7 @@ var app = new Vue({
         title: 'cgc therapy:',
         type: 'Web Development',
         subHeading: 'A Common Ground',
-        tech: ['craftCMS', 'Twig', 'Laravel Valet', 'gulp', 'bootstrap 4', 'html5', 'sass'],
+        tech: ['craftCMS', 'Twig', 'Laravel Valet', 'Gulp', 'Boostrap 4', 'Hmtl5', 'Sass'],
         link: 'http://cgctherapy.com/',
         linkText: 'www.cgctherapy.com'
       },
@@ -51,7 +51,7 @@ var app = new Vue({
         title: 'Sasha Ostojic:',
         type: 'Web Development',
         subHeading: 'Digestible Data-Driven Insights',
-        tech: ['Ruby on Rails', 'Heroku', 'Jquery', 'Html5', 'Sass', 'SendGrid', 'devise gem', 'friendly_id gem', 'bcrypt gem', 'redcarpet gem', 'mail_form gem'],
+        tech: ['Ruby on Rails', 'Heroku', 'Jquery', 'Hmtl5', 'Sass', 'SendGrid', 'devise gem', 'friendly_id gem', 'bcrypt gem', 'redcarpet gem', 'mail_form gem'],
         link: 'http://www.sashaostojic.com/',
         linkText: 'www.sashaostojic.com'
       }
