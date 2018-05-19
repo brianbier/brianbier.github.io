@@ -311,6 +311,9 @@ header a {
       grid-row: 2 / 4;
       margin-right: -5px;
     }
+    header .keep-in-touch .fab {
+      font-size: 1.3rem
+    }
     .external-link {
       display: inline;
       text-transform: lowercase;
@@ -321,9 +324,9 @@ header a {
       align-self: flex-end;
       line-height: 2;
       position: absolute;
-      top: -4px;
-      right: -17px;
-      font-size: 0.8rem;
+      bottom: 0px;
+      right: -21px;
+      font-size: 0.9rem;
     }
     header .blue-line {
       grid-column: 1 / 4;
