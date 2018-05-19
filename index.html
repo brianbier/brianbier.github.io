@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Brian Bier | Full Stack Developer</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -38,14 +39,14 @@
           </ul>
         </div>
         <b class="blue-line"></b>
-        <img class="head-logo" src="images/brianbier-logo.png" alt="Brian Bier Full Stack Developer" width="111" height="110">
-        <p class="more-examples">
-          <a href="../../index.html">keep in touch</a>
+        <img class="head-logo" src="images/brianbier-logo.png" alt="Brian Bier Full Stack Developer">
+        <p class="keep-in-touch">
+          Keep in touch
         </p>
         <div class="contact-details">
           <p>
             If you're looking for a Full Stack Developer for your next project,
-            <a class="email" href=""> Let's meet up.</a>
+            <a class="email" href="mailto:briansbier@gmail.com"> Let's meet up.</a>
           </p>
         </div>
         <div class="footer-reserve">
@@ -55,33 +56,49 @@
         </div>
       </div>
     </header>
-    <main v-if="modalVisable">
+    <main v-if="modalVisable" :class="[ modalVisable ? 'visable': '' ]">
+      <div class="overlayer" @click="closeModal"></div>
       <section>
-        <h1>{{ selectedProject.title }}</h1>
-        <h2>
-          <span></span>
-          <span>{{ selectedProject.subHeading }}</span>
-        </h2>
-        <p class="description">{{ selectedProject.description }}</p>
-        <a :href="selectedProject.link" class="price">{{ selectedProject.linkText}}</a>
-        <div class="location">
-          <h3>
-            Techologies:
-          </h3>
-          <ul>
-            <li v-for="tech in selectedProject.tech">
-              {{ tech }}
-            </li>
-          </ul>
-
-        </div>
-        <span class="close" @click="closeModal">&#215;</span>
-        <div class="featured-image" :style="{ 'background-image': 'url('+ selectedProject.image +')' }">
-        </div>
+        <!-- <div class="wrapper"> -->
+          <h1>{{ selectedProject.title }}</h1>
+          <h2>
+            <span></span>
+            <span>{{ selectedProject.subHeading }}</span>
+          </h2>
+          <p class="description">{{ selectedProject.description }}</p>
+          <div class="link">
+            <a :href="selectedProject.link">{{ selectedProject.linkText}}</a>
+          </div>
+          <div class="tech">
+            <h3>
+              Techologies:
+            </h3>
+            <ul>
+              <li v-for="tech in selectedProject.tech">
+                {{ tech }}
+              </li>
+            </ul>
+          
+          </div>
+          <div class="close">
+            <a @click.prevent="closeModal" href="#">&#215;</a>
+          </div>
+          <div class="featured-image" :style="{ 'background-image': 'url('+ selectedProject.image +')' }">
+          </div>
+        <!-- </div> -->
       </section>
     </main>
-  </div>
+    </div>
+    <div id="particles-js"></div>
   <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+      particlesJS.load('particles-js', 'particles.json', function () {
+        console.log('callback - particles.js config loaded');
+      });
+      
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="scripts/app.js"></script>
 </body>
