@@ -13,7 +13,10 @@
 
 <body>
   <div id="app">
-    <header>
+    <!-- <div v-if="orientationSize == 90">
+    <h1>Please Turn Your phone to virtical view</h1>
+  </div> -->
+    <header :class="[ modalVisable ? 'overflow-hidden': '' ]">
       <div class="header-wrapper">
         <h1>Brian Bier Full Stack Developer</h1>
         <h1>+ Programming Guru</h1>
@@ -56,39 +59,43 @@
         </div>
       </div>
     </header>
-    <main v-if="modalVisable" :class="[ modalVisable ? 'visable': '' ]">
-      <div class="overlayer" @click="closeModal"></div>
-      <div class="main-wrapper">
+    <main>
+      <transition name="fade">
+        <div class="overlayer" v-if="modalVisable" :class="[ modalVisable ? 'visable': '' ]" @click="closeModal"></div>
+      </transition>
+      <div class="main-wrapper" :class="[ modalVisable ? 'visable': '' ]">
         <div class="container">
-          <section>
-            <a target="_blank" :href="selectedProject.link">
-              <h1>
-                {{ selectedProject.title }}
-              </h1>
-            </a>
-            <p class="description">{{ selectedProject.description }}</p>
-            <div class="link">
-              <a target="_blank" :href="selectedProject.link">{{ selectedProject.linkText}}</a>
-            </div>
-            <div class="tech">
-              <h3>
-                Techologies:
-              </h3>
-              <ul>
-                <li v-for="tech in selectedProject.tech">
-                  {{ tech }}
-                </li>
-              </ul>
-            </div>
-            <div class="close">
-              <a @click.prevent="closeModal" href="#">&#215;</a>
-            </div>
-            <div class="featured-image" :style="{ 'background-image': 'url('+ selectedProject.image +')' }">
-            </div>
-          </section>
-
+          <transition name="slide-fade">
+            <section v-if="modalVisable" :class="[ modalVisable ? 'visable': '' ]">
+              <a target="_blank" :href="selectedProject.link">
+                <h1>
+                  {{ selectedProject.title }}
+                </h1>
+              </a>
+              <p class="description">{{ selectedProject.description }}</p>
+              <div class="link">
+                <a target="_blank" :href="selectedProject.link">{{ selectedProject.linkText}}</a>
+              </div>
+              <div class="tech">
+                <h3>
+                  Techologies:
+                </h3>
+                <ul>
+                  <li v-for="tech in selectedProject.tech">
+                    {{ tech }}
+                  </li>
+                </ul>
+              </div>
+              <div class="close">
+                <a @click.prevent="closeModal" href="#">&#215;</a>
+              </div>
+              <div class="featured-image" :style="{ 'background-image': 'url('+ selectedProject.image +')' }">
+              </div>
+            </section>
+          </transition>
         </div>
       </div>
+
     </main>
   </div>
   <div id="particles-js"></div>

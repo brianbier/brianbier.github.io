@@ -3,6 +3,7 @@ var app = new Vue({
   data: {
     selectedProject: null,
     modalVisable: false,
+    orientationSize: null,
     projects: {
       'coast-guard-foundation': {
         image: '/images/coastguardfoundation.jpg',
@@ -10,7 +11,7 @@ var app = new Vue({
         title: 'Coast Guard Foundation:',
         type: 'Web Development',
         subHeading: 'Supporting those who protect our nation',
-        tech: [ 'Nuxt.js', 'Vue.js', 'webpack', 'gulp', 'craftCMS', 'php', 'Tachyon', 'html5'],
+        tech: ['Nuxt.js', 'Vue.js', 'webpack', 'gulp', 'craftCMS', 'php', 'Tachyon', 'html5'],
         link: 'https://coastguardfoundation.org/',
         linkText: 'www.coastguardfoundation.org'
       },
@@ -30,7 +31,7 @@ var app = new Vue({
         title: 'Eye To Eye:',
         type: 'Web Development',
         subHeading: 'It takes 1 to help 1',
-        tech: ['craftCMS', 'google Maps Api', 'Vue.js', 'Twig', 'Laravel Valet', 'gulp','html5', 'Tailwind css'],
+        tech: ['craftCMS', 'google Maps Api', 'Vue.js', 'Twig', 'Laravel Valet', 'gulp', 'html5', 'Tailwind css'],
         link: 'https://eyetoeyenational.org/mentoring',
         linkText: 'www.eyetoeyenational.org'
       },
@@ -56,13 +57,31 @@ var app = new Vue({
       }
     }
   },
+  created() {
+    // window.addEventListener('orientationchange', () => {
+      // alert(window.orientation);
+      this.orientationSize = window.orientation;
+      console.log(document.documentElement.clientWidth);
+    // }, false);
+  },
+  mounted() {
+    this.$nextTick(function () {
+      window.addEventListener('orientationchange', () => {
+        // alert(window.orientation);
+        this.orientationSize = window.orientation;
+      }, false);
+    })
+  },
   methods: {
-    openModal(slug){
+    orientation(event) {
+      this.windowWidth = document.documentElement.clientWidth;
+    },
+    openModal(slug) {
       this.modalVisable = !this.modalVisable
-      
+
       this.selectedProject = this.projects[slug]
     },
-    closeModal(){
+    closeModal() {
       this.modalVisable = !this.modalVisable
       this.selectedProject = null
     }

@@ -6,6 +6,16 @@
 #A1A48C - olive
 #f4f7f6 - white */
 
+::-moz-selection {
+  background: #B3413D;
+  color: #f4f7f6
+}
+
+::selection {
+  background: #B3413D;
+  color: #f4f7f6
+}
+
 html,
 body {
   height: 100%;
@@ -59,6 +69,10 @@ ol {
   margin: 0;
 }
 
+.overflow-hidden {
+  overflow-y: hidden;
+}
+
 /* --------------------------------------------------------*/
 
 header {
@@ -91,6 +105,7 @@ header a {
 
 header a {
   border-bottom: 1px solid rgba(169, 169, 169, 0.79);
+  display: block;
 }
 
 #particles-js {
@@ -266,12 +281,10 @@ header a {
       } 
     } */
   @media (max-width: 500px) {
-    header {
-      overflow-y: hidden;
-    }
     header .header-wrapper {
       /* autoprefixer: off */
       width: 66vw;
+      margin-top: 40px;
       grid-template-columns: auto 1fr 1fr 1fr 0.5fr;
       grid-template-rows: auto auto auto auto;
     }
@@ -384,7 +397,7 @@ main {
   /* opacity: 0; */
   height: 100%;
   transition: all 450ms cubic-bezier(0.32, 1, 0.23, 1) 0ms;
-  z-index: 3;
+  z-index: 1;
 }
 
 section {
@@ -516,6 +529,52 @@ section .close a {
   .container {
     padding: 0px 0px;
   }
-  .tech {
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity .4s;
+}
+
+.fade-enter,
+.fade-leave-to
+/* .fade-leave-active below version 2.1.8 */
+
+  {
+  opacity: 0;
+}
+
+/* Enter and leave animations can use different */
+
+/* durations and timing functions.              */
+
+.slide-fade-enter-active {
+  transition: all .6s ease;
+  transform: translateY(0px);
+}
+
+.slide-fade-leave-active {
+  transition: all 1s ease;
+}
+
+.slide-fade-enter
+/* .slide-fade-leave-active below version 2.1.8 */
+
+  {
+  opacity: 0;
+  transform: translateY(-400px);
+}
+
+.slide-fade-leave-to {
+  opacity: 0;
+  transform: translateY(800px);
+}
+
+@media only screen and (max-height: 430px) {
+  header {
+    overflow: scroll !important;
+  }
+  main .container {
+    align-items: flex-start
   }
 }
