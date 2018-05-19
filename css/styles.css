@@ -41,6 +41,7 @@ body {
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
 }
+
 body {
   margin: 0px
 }
@@ -213,6 +214,12 @@ header a {
     grid-column: 4 / 6;
     align-self: end;
   }
+  header .keep-in-touch span {
+    display: block;
+  }
+  header .keep-in-touch a {
+    display: inline-block;
+  }
   header .contact-details {
     font-size: calc(0.9rem + 1px);
     grid-row: 4;
@@ -341,11 +348,15 @@ header a {
       width: 111px;
     }
   }
-  /* @media (min-width: 1000px) {
-    header {
-      padding-bottom: 15rem;
+  @media (min-width: 1289px) {
+    header .keep-in-touch span {
+      display: inline-block;
+    }
+    header .keep-in-touch a {
+      display: inline-block;
     }
   }
+  /*
   @media (min-width: 1300px) {
     header {
       padding-bottom: 25rem;
