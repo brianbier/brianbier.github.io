@@ -2,7 +2,7 @@ var app = new Vue({
   el: '#app',
   data: {
     selectedProject: null,
-    modalVisable: true,
+    modalVisable: false,
     projects: {
       'coast-guard-foundation': {
         image: '/images/coastguardfoundation.jpg',
@@ -56,13 +56,10 @@ var app = new Vue({
       }
     }
   },
-  created(){
-    this.selectedProject = this.projects['sasha-ostojic']
-  },
   methods: {
     openModal(slug){
       this.modalVisable = !this.modalVisable
-      console.log(this.projects[slug])
+      
       this.selectedProject = this.projects[slug]
     },
     closeModal(){
