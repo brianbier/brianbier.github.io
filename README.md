@@ -11,9 +11,10 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5
-    Grid
+    CSS3, HTML5
+    Bootstrap 4
+    Animate Css
     Javascript
     Particles Js
-    Vue.JS
-
+    Waypoints Js
+    jQuery

@@ -3,7 +3,6 @@ var app = new Vue({
   data: {
     selectedProject: null,
     modalVisable: false,
-    orientationSize: null,
     projects: {
       'coast-guard-foundation': {
         image: '/images/coastguardfoundation.jpg',
@@ -57,25 +56,7 @@ var app = new Vue({
       }
     }
   },
-  created() {
-    // window.addEventListener('orientationchange', () => {
-      // alert(window.orientation);
-      this.orientationSize = window.orientation;
-      console.log(document.documentElement.clientWidth);
-    // }, false);
-  },
-  mounted() {
-    this.$nextTick(function () {
-      window.addEventListener('orientationchange', () => {
-        // alert(window.orientation);
-        this.orientationSize = window.orientation;
-      }, false);
-    })
-  },
   methods: {
-    orientation(event) {
-      this.windowWidth = document.documentElement.clientWidth;
-    },
     openModal(slug) {
       this.modalVisable = !this.modalVisable
 
