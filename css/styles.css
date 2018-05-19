@@ -426,6 +426,7 @@ section h1 {
   font-size: calc(1rem + 2vw);
   font-weight: bold;
   color: #B3413D;
+  text-align: right;
 }
 
 .description {
