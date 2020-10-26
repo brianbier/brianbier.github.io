@@ -242,9 +242,9 @@ header a {
     /* transform: rotate(45deg); */
   }
   header .sf-admin {
-    grid-row: 8;
-    grid-column: 1/5;
-    width: 150px;
+    grid-row: 2;
+    grid-column: 4;
+    width: 200px;
   }
   @media (max-width: 820px) {
     header {
